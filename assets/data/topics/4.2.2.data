@@ -1,0 +1,114 @@
+<p>
+The theory of solution is given in the previous sections. In this section we are going to see application of the method for Fredholm integro-differential equations.
+</p>
+
+<p>
+<b>The Noise Terms Phenomena </b>
+</p>
+
+<p>
+The exact solution of any integral or integro-differential equation, might be
+obtained by considering the 1<sup>st</sup> two components u<sub>0</sub> and u<sub>1</sub> only. Instead of
+evaluating several terms, it is useful to examine the 1st two components u<sub>0</sub> and u<sub>1</sub>.
+</p>
+
+<p>
+If we observe the appearance of like terms in both components with opposite sign,
+then by canceling these terms, the remaining non-canceled terms of u<sub>0</sub> might in some cases provide the exact solution. This can be justified through substitution.
+The self-canceling terms between u<sub>0</sub> and u<sub>1</sub> are called noise terms.
+</p>
+
+<p>
+If the noise terms cannot be computable, then several components are evaluated then solution is written in the series form.
+</p>
+
+<div class="red bold">Example 4.3:</div>
+<p>
+Solve the Fredholm integro-differential equation
+</p>
+
+<p>
+<div class="l-example">
+\( u^{\prime}(x)=\cos x+\frac{1}{4} x-\frac{1}{4} \int_{0}^{\frac{\pi}{2}} x t u(t) d t(1), u(0)=0 \) by ADM.
+</div>
+</p>
+
+<div class="red bold">Solution 4.3:</div>
+
+<p>
+Integrating the given equation
+</p>
+
+<p>
+<div class="l-example">
+\( {\left[u(x)=\sum_{n=0}^{\infty} u_{n}(x)\right](2)} \)
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u(x)-u(0)=\sin x+\frac{1}{8} x^{2}-\frac{1}{8} x^{2} \int_{0}^{\frac{\pi}{2}} t u(t) d t \)
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u(x)=\sin x+\frac{1}{8} x^{2}-\frac{1}{8} x^{2} \int_{0}^{\frac{\pi}{2}} t u(t) d t(3) \)
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u_{0}(x)+u_{1}(x)+u_{2}(x)+\ldots=\sin x+\frac{1}{8} x^{2}-\frac{1}{8} x^{2} \int_{0}^{\frac{\pi}{2}} t\left(u_{0}(t)+u_{1}(t)+u_{2}(t)+\ldots\right) d t \)
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u_{0}(x)+u_{1}(x)+u_{2}(x)+\ldots=\sin x+\frac{1}{8} x^{2}-\frac{1}{8} x^{2} \int_{0}^{\frac{\pi}{2}} t u_{0}(t) d t-\frac{1}{8} x^{2} \int_{0}^{\frac{\pi}{2}} t u(t) d t+\ldots \)
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u_{1}(x)=-\frac{1}{8} x^{2} \int_{0}^{\frac{\pi}{2}}\left(t \sin t \frac{1}{8} t^{3}\right) d t \Rightarrow u_{1}(x)=-\left.\frac{1}{8} x^{2}\left[\left(\sin t-t . \cos t+\frac{1}{32} t^{4}\right)\right]\right|_{0} ^{\frac{\pi}{2}} \)
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( \Rightarrow u_{0}(x)=\sin x+\frac{1}{8} x^{2}, u_{1}(x)=-\frac{1}{8} x^{2} \int_{0}^{\frac{\pi}{2}} t u_{0}(t) d t \)
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( {[x]=-\frac{1}{8} x^{2}\left(1-0+\frac{\pi^{2}}{32.16}-0\right) \Rightarrow u_{1}(x)=-\frac{1}{8} x^{2}-\frac{\pi^{4}}{8.32 .16} x^{2}} \)
+</div>
+</p>
+
+<p>
+\(\frac{1}{8} x^{2}\) is noise term in \( u_{0}(x) \) and \(u_{1}(x)\) with opposite sign. Canceling this term from the \( u_{0}(x) \) gives us the exact solution \( u(x)=\sin x \)
+</p>
+
+<p>
+Satisfaction: \( u(x) = sin(x) \)
+</p>
+
+<p>
+<div class="l-example">
+\( u^{\prime}(x)=\cos x+\frac{1}{4} x-\frac{1}{4} x \int_{0}^{\frac{\pi}{2}} t \sin t d t \)
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u^{\prime}(x)=\cos x+\frac{1}{4} x-\frac{1}{4} x\left[\left.(\sin t-t \cos t)\right|_{t=0} ^{\frac{\pi}{2}}\right] \Rightarrow u^{\prime}(x)=\cos x+\frac{1}{4} x-\frac{1}{4} x(1-0-0-0) \Rightarrow \)
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u^{\prime}(x)=\cos x+\cancel{\frac{1}{4} x}-\cancel{\frac{1}{A} x} \)
+</div>
+</p>

@@ -1,0 +1,123 @@
+<p>
+To convert a Volterra integral equation to IVP, we differentiate both sides of the equation by using Leibnitz Rule. Then we determine initial conditions by setting \(x=0\) in the equation \(u(x)\) and \( u^{\prime}(x) \). Then finally we solve the initial-value problem.
+</p>
+
+<div class="red bold">Example 3.1:</div>
+<p>
+Solve the Volterra integral equation <span class="l-example">\( u(x)=x^{2}+\frac{1}{12} x^{4}+\int_{0}^{x}(t-x) u(t) d t \)</span> by reducing to equivalent IVP.
+</p>
+
+<div class="red bold">Solution 3.1:</div>
+<p>
+Differentiating both sides of given equation
+</p>
+
+<p>
+<div class="l-example">
+\( u^{\prime}(x)=2 x+\frac{1}{12} 4 x^{3}+\frac{d}{d x} \int_{0}^{x}(t-x) u(t) d t \)
+</div>
+</p>
+
+<p>
+<div class="red bold">Leibnitz Rule:</div>
+</p>
+
+<p>
+    <div class="l-example">
+    \( \left(\frac{d}{d x} \int_{\alpha(x)}^{\beta(x)} K(x, t) u(t) d t=\frac{d \beta(x)}{d x} K(x, \beta(x))\right. \\ \left.-\frac{d \alpha(x)}{d x} K(x, \alpha(x))+\int_{\alpha(x)}^{\beta(x)} \frac{d}{d x} K(x, t) u(t) d t \right) \)
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( u^{\prime}(x)=2 x+\frac{1}{3} x^{3}+\int_{0}^{x}-u(t) d t \) <span class="f-num">(1)</span>
+    </div>
+</p>
+<p>
+    Differentiating once more (1)
+</p>
+<p>
+    <div class="l-example">
+    \( u "(x)=2+x^{2}-u(x) \text { or } u^{\prime \prime}(x)+u(x)=2+x^{2} \) <span class="f-num">(2)</span>
+    </div>
+</p>
+<p>
+    if \( x=0 \Rightarrow u(0)=0\), \(u^{\prime}(0)=0 \) <span class="f-num">(3)</span>
+</p>
+<p>
+    <div class="l-example">
+    Characteristic equation, <br><span class="l-example">\( r^{2}+1=0 \Rightarrow r_{1}=i, r_{2}=-i\left(\begin{array}{cc}
+                                                        \left(u(x)=u_{c}+u_{p}\right) & \\
+                                                        \text {complementary } & \text { particular } \\
+                                                        u_{c}=c_{1} e^{r_{1} x}+c_{2} e^{r_{2} x} & r_{1}, r_{2}>0 \\
+                                                        u_{c}=\left(c_{1}+c_{2} x\right) e^{r x}, & r_{1}=r_{2}=r
+                                                        \end{array}\right) \)</span>
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( u_{c}=A . e^{i x}+B . e^{-i x} \)
+    </div>
+</p>
+
+<p>
+<div class="l-example">
+\( u_{c}=A \cdot \cos x+B \sin x \), where A, B arbitrary constant.
+</div>
+</p>
+
+<p>
+    <div class="l-example">
+    \( u_{p}=\alpha+\beta x+\gamma x^{2} \)
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( u_{p}^{\prime}=\beta+2 \gamma x \)
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( u_{p}^{\prime \prime}=2 \gamma \)
+    </div>
+</p>
+<p>
+    Replace \( u_{p}^{\prime \prime} \) and \( u_{p} \) in the equation \( u^{\prime \prime}(x)+u(x)=2+x^{2} \)
+</p>
+<p>
+    <div class="l-example">
+    \( 2 \gamma+\alpha+\beta x+\gamma x^{2}=2+x^{2} \Rightarrow \alpha+2 \gamma=2 \Rightarrow \alpha=0, \beta=0, \gamma=1 \)
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( u_{p}=x^{2} \)
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( u(x)=u_{c}+u_{p} \Rightarrow A \cos x+B \sin x+x^{2} \)
+    </div>
+</p>
+<p>
+    Use \( u(0)=0 u^{\prime}(0)=0 \) to determine \(A, B\).
+</p>
+<p>
+    <div class="l-example">
+    \( u(0)=0 \Rightarrow A \cos 0+B \sin 0+0^{2}=0 \Rightarrow A=0 \)
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( u^{\prime}(0)=0 \Rightarrow u^{\prime}(x)=-A \sin x+B \cos x+2 x  \)
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( 0=-A \sin 0+B \cos 0+2.0 \Rightarrow B=0 \)
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( u(x)=x^{2} \)
+    </div>
+</p>

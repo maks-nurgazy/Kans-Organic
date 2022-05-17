@@ -1,0 +1,101 @@
+<p>
+An equation where both differential and integral operators will appear in the same equation is called <b>integro–differential equation</b>.
+</p>
+
+<p>
+Integro–differential equations might be used in the science. Such as heat transfer, diffusion process, neutron diffusion and biological species coexisting together with increasing and decreasing rates of generating.
+</p>
+
+<p>
+In the integro-differential equations, it is important to note that the unknown function \( u(x) \) and one or more of it is derivatives such as \( u^{\prime}(x), u^{\prime \prime}(x), \dots \) appear out and under the integral sign as well. One quick source of integro – differential equations can be seen when we convert a Differential Equation to an Integral Equation using Leibnitz rule.
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u^{\prime}(x)=x-\int_{0}^{1} e^{x-t} u(t) d t, u(0)=0 \)
+</span>
+</td>
+<td>
+(4.1)
+</td>
+</table>
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u^{\prime \prime}(x)=e^{x}-x+\int_{0}^{1} x t u^{\prime}(t) d t, u(0)=1, u^{\prime}(0)=1 \)
+</span>
+</td>
+<td>
+(4.2)
+</td>
+</table>
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u^{\prime}(x)=x-\int_{0}^{x}(x-t) u(t) d t \quad u(0)=0 \)
+</span>
+</td>
+<td>
+(4.3)
+</td>
+</table>
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u^{\prime \prime}(x)=-x+\int_{0}^{x}(x-t) u(t) d t, u(0)=0, u^{\prime}(0)=-1 \)
+</span>
+</td>
+<td>
+(4.4)
+</td>
+</table>
+</p>
+
+<p>
+To determine solution of an integro-differential equation, the initial conditions should be given, and this may be clearly seen as a result of involving \( u(x) \) and its derivatives. Initial conditions are needed to determine the constants of integration. In this section we are going to discuss the reliable methods to solve Fredholm integro-differential equations and focus on the equations that involve separable Kernels where Kernel \( K(x, t) \) can be expressed as a finite sum of the form;
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( K(x, t)=\sum_{k=1}^{n} g_{k}(x) h_{k}(t) \)
+</span>
+</td>
+<td>
+(4.5)
+</td>
+</table>
+</p>
+
+<p>
+Without loss of generality, we are going to make our examination on a term Kernel \(K(x, t)\) of the form
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( K(x, t)=g(x) h(t) \)
+</span>
+</td>
+<td>
+(4.6)
+</td>
+</table>
+</p>
+
+<p>
+The non-separable Kernel can be reduced to separable Kernel by using Taylor expansion for the Kernel involved.
+</p>

@@ -1,0 +1,141 @@
+<style>
+ .blank-quiz {
+   width: 100%;
+   height: calc(100vh - 20px);
+   padding: 10px;
+ }
+
+ .questionsNumber {
+   float: right;
+   border: 1px solid rgb(55, 137, 253);
+   border-radius: 5px;
+   padding: 3px 7px;
+   color: rgb(55, 137, 253);
+   font-size: 18px;
+
+   -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.75);
+   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.75);
+ }
+
+ .questionTitle {
+   font-size: 17px;
+   padding: 8px;
+   margin: 15px 0;
+ }
+
+ .questionChoise {
+   border: none;
+   border-radius: 5px;
+   padding: 7px;
+   -webkit-box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.75);
+   box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.75);
+   position: relative;
+ }
+
+ .questionChoise:not(:last-of-type) {
+   margin-bottom: 8px;
+ }
+
+ .questionChoise > .choise-icon {
+   width: 20px;
+   height: 20px;
+   display: inline-block;
+   position: relative;
+
+ }
+
+ .questionChoise > .choise-letter {
+   margin-left: 20px;
+   width: 15px;
+   display: inline-block;
+   vertical-align: top;
+ }
+
+ .questionChoise > .choise-answer {
+   width: calc(100% - 39px);
+   display: inline-block;
+ }
+ .questionChoise .choise-icon-container {
+   display: inline-block;
+    height: calc(100% - 14px);
+    position: absolute;
+ }
+
+ .questionChoise .choise-icon {
+   position: relative;
+   top: calc(50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+   width: 15px;
+   height: 15px;
+   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTQzNy4wMTksNzQuOThDMzg4LjY2NywyNi42MjksMzI0LjM4LDAsMjU2LDBDMTg3LjYxOSwwLDEyMy4zMzEsMjYuNjI5LDc0Ljk4LDc0Ljk4QzI2LjYyOCwxMjMuMzMyLDAsMTg3LjYyLDAsMjU2DQoJCQlzMjYuNjI4LDEzMi42NjcsNzQuOTgsMTgxLjAxOUMxMjMuMzMyLDQ4NS4zNzEsMTg3LjYxOSw1MTIsMjU2LDUxMmM2OC4zOCwwLDEzMi42NjctMjYuNjI5LDE4MS4wMTktNzQuOTgxDQoJCQlDNDg1LjM3MSwzODguNjY3LDUxMiwzMjQuMzgsNTEyLDI1NlM0ODUuMzcxLDEyMy4zMzMsNDM3LjAxOSw3NC45OHogTTI1Niw0ODJDMTMxLjM4Myw0ODIsMzAsMzgwLjYxNywzMCwyNTZTMTMxLjM4MywzMCwyNTYsMzANCgkJCXMyMjYsMTAxLjM4MywyMjYsMjI2UzM4MC42MTcsNDgyLDI1Niw0ODJ6Ii8+DQo8L3N2Zz4NCg==");
+   background-position: center;
+ }
+
+ .questionChoise .choise-icon.active {
+   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00MzcuMDE5LDc0Ljk4QzM4OC42NjcsMjYuNjI5LDMyNC4zOCwwLDI1NiwwQzE4Ny42MTksMCwxMjMuMzMxLDI2LjYyOSw3NC45OCw3NC45OEMyNi42MjgsMTIzLjMzMiwwLDE4Ny42MiwwLDI1Ng0KCQkJczI2LjYyOCwxMzIuNjY3LDc0Ljk4LDE4MS4wMTlDMTIzLjMzMiw0ODUuMzcxLDE4Ny42MTksNTEyLDI1Niw1MTJjNjguMzgsMCwxMzIuNjY3LTI2LjYyOSwxODEuMDE5LTc0Ljk4MQ0KCQkJQzQ4NS4zNzEsMzg4LjY2Nyw1MTIsMzI0LjM4LDUxMiwyNTZTNDg1LjM3MSwxMjMuMzMzLDQzNy4wMTksNzQuOTh6IE0yNTYsNDgyQzEzMS4zODMsNDgyLDMwLDM4MC42MTcsMzAsMjU2UzEzMS4zODMsMzAsMjU2LDMwDQoJCQlzMjI2LDEwMS4zODMsMjI2LDIyNlMzODAuNjE3LDQ4MiwyNTYsNDgyeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMzc4LjMwNSwxNzMuODU5Yy01Ljg1Ny01Ljg1Ni0xNS4zNTUtNS44NTYtMjEuMjEyLDAuMDAxTDIyNC42MzQsMzA2LjMxOWwtNjkuNzI3LTY5LjcyNw0KCQkJYy01Ljg1Ny01Ljg1Ny0xNS4zNTUtNS44NTctMjEuMjEzLDBjLTUuODU4LDUuODU3LTUuODU4LDE1LjM1NSwwLDIxLjIxM2w4MC4zMzMsODAuMzMzYzIuOTI5LDIuOTI5LDYuNzY4LDQuMzkzLDEwLjYwNiw0LjM5Mw0KCQkJYzMuODM4LDAsNy42NzgtMS40NjUsMTAuNjA2LTQuMzkzbDE0My4wNjYtMTQzLjA2NkMzODQuMTYzLDE4OS4yMTUsMzg0LjE2MywxNzkuNzE3LDM3OC4zMDUsMTczLjg1OXoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==");
+ }
+
+ .clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+
+ html,
+ body {
+   padding: 0;
+   margin: 0
+ }
+
+
+ body {
+   width: calc(100vw - 20px)
+ }
+
+</style>
+<div class="blank-quiz">
+  <div class="row clearfix">
+    <div class="questionsNumber">Question: <span class="currentQuestion">1</span>/<span class="allQuestions">9</span></div>
+  </div>
+  <div class="questionTitle">
+    1. Which of the following is correct classification of the integral equation?
+    \( u(x)=1+x4+∫x01x+41u(t)dt \)
+  </div>
+  <div class="questionChoises">
+    <div class="questionChoise">
+      <div class="choise-icon-container">
+                <div class="choise-icon"></div>
+            </div>
+      <div class="choise-letter">a.</div>
+      <div class="choise-answer">
+        Nonhomogeneous nonlinear Voion
+      </div>
+    </div>
+    <div class="questionChoise">
+      <div class="choise-icon-container">
+                <div class="choise-icon"></div>
+            </div>
+      <div class="choise-letter">a.</div>
+      <div class="choise-answer">
+        Nonhomogeneous nonlinear Volterra integral equation nholterra integral equation nhomogeneous nonlinear Volterra integral equation
+      </div>
+    </div>
+    <div class="questionChoise">
+      <div class="choise-icon-container">
+                <div class="choise-icon active"></div>
+            </div>
+      <div class="choise-letter">a.</div>
+      <div class="choise-answer">
+        Nonhomogeneous nonlinear Volterra integral equation nhomogeneous nonlinear Volterra integral equation nhomogeneous nonlinear Volterra integral equation nhomogeneous nonlinear Volterra integral equation nhomogeneous nonlinear Volterra integral equation
+      </div>
+    </div>
+  </div>
+  <div class="navigation">
+    <button class="navigation-button">Prev.</button>
+  <button class="navigation-button active">Next.
+</button>
+</div>
+</div>

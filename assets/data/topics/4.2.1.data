@@ -1,0 +1,91 @@
+<p>
+Assume a standard form to Fredholm integro – differential equation by
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u^{(n)}(x)=f(x)+\int_{0}^{1} K(x, t) u(t) d t, u^{(k)}(0)=b_{k}, \quad 0 \leq k \leq(n-1) \)
+</span>
+</td>
+<td>
+(4.7)
+</td>
+</table>
+</p>
+
+<p>
+where \( u^{(n)} (x) \) indicates the n<sup>th</sup> derivative of \(u(x)\) with respect to \(x\), b<sub>k</sub> are constants that define the initial conditions, substituting (4.6) into (4.7) yields
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u^{(n)}(x)=f(x)+g(x) \int_{0}^{1} h(t) u(t) d t, u^{(k)}(0)=b_{k}, \quad 0 \leq k \leq(n-1) \)
+</span>
+</td>
+<td>
+(4.8)
+</td>
+</table>
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( \alpha=\int_{0}^{1} h(t) u(t) d t, \quad u^{(n)}(x)=f(x)+\alpha g(x) \)
+</span>
+</td>
+<td>
+(4.9)
+</td>
+</table>
+</p>
+
+<p>
+(4.9) is used to compute \(\alpha\), then after finding \(\alpha\) we substitute in the original equation.
+</p>
+
+<div class="red bold">Example 4.1:</div>
+<p>
+Solve Fredholm integro-differential equation <span class="l-example">\( u^{\prime}(x)=1-\frac{1}{3} x+x \int_{0}^{1} t u(t) d t, u(0)=0 \)</span> by using direct computation method.
+</p>
+
+<div class="red bold">Solution 4.1:</div>
+
+<p>
+<div class="l-example">
+\( \alpha=\int_{0}^{1} t u(t) d t(1) \Rightarrow u^{\prime}(x)=1-\frac{1}{3} x+\alpha x \) <span class="f-num">(2)</span>
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u^{\prime}(x)=1-\frac{1}{3} x+x \alpha \Rightarrow u(x)-\underset{0}{u(0)}=x-\frac{1}{6} x^{2}+\alpha \frac{x^{2}}{2} \) <span class="f-num">(3)</span>
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u(x)=x-\left(\frac{1}{6}-\frac{\alpha}{2}\right) x^{2} ; u(t)=t-\left(\frac{1}{6}-\frac{\alpha}{2}\right) t^{2} \) <span class="f-num">(4)</span>
+</div>
+</p>
+
+<p>
+Substitute (4) in (1)
+</p>
+
+<p>
+<div class="l-example">
+\( \alpha=\left.\left(\frac{1}{3} t^{3}-\frac{1}{24} . t^{4}+\frac{\alpha}{8} t^{4}\right)\right|_{0} ^{1} \Rightarrow \alpha=\frac{1}{3}-\frac{1}{24}+\frac{\alpha}{8} \Rightarrow \alpha=\frac{\cancel{7}}{24} . \frac{8}{\cancel{7}} \Rightarrow \alpha=\frac{1}{3} \) <span class="f-num">(5)</span>
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u(x)=x \)
+</div>
+</p>

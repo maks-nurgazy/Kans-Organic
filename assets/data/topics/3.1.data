@@ -1,0 +1,20 @@
+<p>
+The standard form of Volterra Equations of second kind is
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u(x)=f(x)+\lambda \int_{0}^{x} K(x, t) u(t) d t \)
+</span>
+</td>
+<td>
+(3.1)
+</td>
+</table>
+</p>
+
+<p>
+where \( \lambda \) is a constant, \(K(x, t)\) kernel of the equation and \(f(x)\) a given function.
+</p>

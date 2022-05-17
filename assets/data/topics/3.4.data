@@ -1,0 +1,84 @@
+<p>
+<div class="l-example katex-my-1">
+\( u(x)=\sum_{n=1}^{\infty} u_{n}(x) \quad u(x)=f(x)+\lambda \int_{0}^{x} K(x, t) u(t) d t \)
+</div>
+</p>
+
+<p>
+    <div class="l-example katex-my-1">
+    \( \sum_{n=1}^{\infty} u_{n}(x)=f(x)+\lambda \int_{0}^{x} K(x, t)\left(\sum_{n=1}^{\infty} u_{n}(t)\right) d t \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( u_{0}(x)+u_{1}(x)+u_{2}(x)+\ldots=f(x)+\lambda \int_{0}^{x} K(x, t) u_{0}(t) d t+\lambda \int_{0}^{x} K(x, t) u_{1}(t) d t+\ldots \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( u_{0}(x)=f(x) \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( u_{1}(x)=\int_{0}^{x} K(x, t) u_{0}(t) d t \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( \underset{\text{M}}{u_{2}(x)}=\int_{0}^{x} \underset{\text{M}}{K(x, t) u_{1}(t) d t} \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( u_{n+1}(x)=\lambda \int_{0}^{x} K(x, t) u_{n}(t) d t \)
+    </div>
+</p>
+
+<div class="red bold">Example 3.5:</div>
+<p>
+    Solve the Volterra integral equation \( u(x)=1-x+\frac{1}{2} x^{2}-\int_{0}^{x}(x-t) u(t) d t \) by Adomian Decomposition Method (ADM).
+</p>
+
+<div class="red bold">Solution 3.5:</div>
+
+<p>
+    <div class="l-example katex-my-1">
+    \( f(x)=1-x+\frac{1}{2} x^{2} \quad \lambda=-1, u(x)=\sum_{n=1}^{\infty} u_{n}(x) \Rightarrow u_{0}(x)+u_{1}(x)+u_{2}(x)+\ldots=f(x)+\lambda \int_{0}^{x} K(x, t) u_{n}(t) d t+\ldots \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( u(x)=1-x+\frac{1}{2} x^{2}-\int_{0}^{x}(x-t) u(t) d t \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( u_{0}(x)=f(x) \Rightarrow u_{0}(x)=1-x+\frac{1}{2} x^{2} \Rightarrow u_{0}(t)=1-t+\frac{1}{2} t^{2} \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( u_{1}(x)=-\int_{0}^{x}(x-t)\left(1-t+\frac{1}{2} t^{2}\right) d t \Rightarrow x_{1}(x)=-\int_{0}^{x}\left(x-x t+\frac{1}{2} x t^{2}-t+t^{2}-\frac{1}{2} t^{3}\right) d t \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( u_{1}(x)=-\left.\left(x t-x \frac{t^{2}}{2}+x \frac{t^{3}}{6}-\frac{t^{2}}{2}+\frac{t^{3}}{3}-\frac{t^{4}}{8}\right)\right|_{i=0} ^{x} \Rightarrow u_{1}(x)=-\left(x^{2}-\frac{t^{3}}{2}+\frac{x^{4}}{6}-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{8}\right)+0 \Rightarrow u_{1}(x)=-\frac{1}{2} x^{2}+\frac{1}{6} x^{3}-\frac{1}{24} x^{4} \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( u(x)=u_{0}(x)+u_{1}(x)+u_{2}(x)+\ldots \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( u(x)=\left(1-x+\frac{1}{2} x^{2}\right)+\left(-\frac{1}{2} x^{2}+\frac{1}{2} x^{3}-\frac{1}{2} x^{2}\right) x^{2}(x)+\ldots \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( \Rightarrow u(x)=1-x+\frac{1}{6} x^{3}-\frac{1}{24} x^{4}+\ldots \)
+    </div>
+</p>

@@ -1,0 +1,271 @@
+<div class="red bold">Example 5.1:</div>
+Solve <span class="l-example">\( u(x)=x-\frac{5}{6}+\int_{0}^{1}\left(u(t)+u^{2}(t)\right) d t \)</span>  by directional computation method (DCM).
+
+<br>
+<br>
+<div class="red bold">Solution 5.1:</div>
+
+<div class="l-example">
+\( u(x)=x-\frac{5}{6} \quad \alpha=\int_{0}^{1}\left(u(t)+u^{2}(t)\right) d t \)
+</div>
+
+<div class="l-example">
+\( u(x)=x-\frac{5}{6}+\alpha \Rightarrow u(t)=t-\frac{5}{6}+\alpha \)
+</div>
+
+<div class="l-example">
+\( \alpha=\int_{0}^{1}\left(\left(t-\frac{5}{6}+\alpha\right)+\left(t-\frac{5}{6}+\alpha\right)^{2}\right) d t \)
+</div>
+
+<div class="l-example">
+\( \alpha=\int_{0}^{1}\left(-\frac{2 t}{3}-\frac{2 t}{3}-\frac{5}{36}-t^{2}+2 t \alpha+\alpha^{2}\right) d t \)
+</div>
+
+<div class="l-example">
+\( \alpha=\left.\left(-\frac{2 t^{2}}{6}-\frac{2 \alpha t}{3}-\frac{5 t}{36}+\frac{t^{3}}{3}+2 t^{2} \alpha+\alpha^{2} t\right)\right|_{0} ^{1} \)
+</div>
+
+<div class="l-example">
+\( \not \alpha=-\frac{2}{6}-\frac{2 \alpha}{3}-\frac{5}{36}+\frac{1}{3}+\not \alpha+\alpha^{2} \)
+</div>
+
+<div class="l-example">
+\( \frac{2 \alpha}{3}=-\frac{17}{36}+\frac{1}{3}+\alpha^{2} \)
+</div>
+
+<div class="l-example">
+\( \frac{2 \alpha}{3}=\alpha^{2}-\frac{5}{36} \)
+</div>
+
+<div class="l-example">
+\( \alpha^{2}-\frac{2 \alpha}{3}-\frac{5}{36}=0 \)
+</div>
+
+<div class="l-example">
+\( \Delta=b^{2}-4 a c \)
+</div>
+
+<div class="l-example">
+\( =\frac{4}{9}+\frac{5}{9}=\frac{9}{9}=1 \)
+</div>
+
+<div class="l-example">
+\( \alpha_{1,2}=\frac{-b \pm \sqrt{b^{2}-4 a c}}{2 a} \)
+</div>
+
+<div class="l-example">
+\( \alpha_{1,2}=\frac{\frac{2}{3} \mathrm{ml}}{2} \Rightarrow \alpha_{1}=-\frac{1}{6}, \alpha_{2}=\frac{5}{6} \)
+</div>
+
+<div class="l-example">
+\( u(x)=x-\frac{5}{6}-\frac{1}{6}=x-1 \)
+</div>
+
+<div class="l-example">
+\( u(x)=x-\frac{5}{6}+\frac{5}{6}=x \)
+</div>
+
+
+<br>
+<div class="red bold">Example 5.2:</div>
+Solve <span class="l-example">\( u(x)=\sin x-\frac{\pi}{8}+\frac{1}{2} \int_{0}^{\frac{\pi}{2}} u^{2}(t) d t \)</span>  by DCM.
+
+<br>
+<br>
+<div class="red bold">Solution 5.2:</div>
+
+<div class="l-example">
+\( u(x)=\sin x-\frac{\pi}{8}+\frac{1}{2} \alpha(1), \quad \alpha=\int_{0}^{\frac{\pi}{2}} u^{2}(t) d t \quad(2) \)
+</div>
+
+<div class="l-example">
+\( u(t)=\sin t-\frac{\pi}{8}+\frac{1}{2} \alpha(3) \)
+</div>
+
+<div class="l-example">
+\( \alpha=\int_{0}^{\frac{\pi}{2}}\left(\sin ^{2} t+\frac{\pi^{2}}{64}+\frac{1}{4} \alpha^{2}-\frac{\pi}{4} \sin t-\frac{\pi}{8} \alpha+\alpha \sin t\right) d t \)
+</div>
+
+<div class="l-example">
+\( \alpha=\left.\left(\frac{1}{2} t-\frac{1}{2} \sin 2 t+\frac{\pi^{2}}{64} t+\frac{1}{4} \alpha^{2} t-\frac{\pi}{4} \cos t-\frac{\pi}{8} \alpha t-\alpha \cos t\right)\right|_{0} ^{\frac{\pi}{2}} \)
+</div>
+
+<div class="l-example">
+\( \Rightarrow 16 \pi \alpha^{2}-8 \pi^{2} \alpha+\pi^{3}=0 \)
+</div>
+
+<div class="l-example">
+\( \Rightarrow 16 \alpha^{2}-8 \pi \alpha+\pi^{2}=0 \)
+</div>
+
+<div class="l-example">
+\( \Rightarrow \alpha^{2}-\frac{\pi}{2} \alpha+\frac{\pi^{2}}{16}=0 \)
+</div>
+
+<div class="l-example">
+\( \Rightarrow\left(\alpha-\frac{\pi}{4}\right)^{2}-\frac{\pi^{2}}{16}+\frac{\pi^{2}}{16}=0 \Rightarrow \alpha=\frac{\pi}{4} \)
+</div>
+
+Set (4) in (1)
+
+<div class="l-example">
+\( u(x)=\sin x-\frac{\pi}{8}+\frac{1}{2} \alpha \Rightarrow u(x)=\sin x-\frac{\pi}{8}+\frac{1}{2} . \frac{\pi}{4} \)
+</div>
+
+<div class="l-example">
+\( \bm{u(x)=\sin x} \)
+</div>
+
+<br>
+<div class="red bold">Example 5.3:</div>
+
+Find the solution of the coupled 1st order nonlinear equations by converting them to nonlinear integral equation  <span class="l-example">\( \frac{d u}{d x}=v, \frac{d v}{d x}=x^{3}(u+v), u(0)=1, v(0)=\frac{1}{2} \)</span> when \(x=0\).
+
+<br>
+<br>
+<div class="red bold">Solution 5.3:</div>
+
+<div class="l-example">
+\( u(x)=u(0)+\int_{0}^{x} v d x \Rightarrow u(x)=1+\int_{0}^{x} v d x \)
+</div>
+
+<div class="l-example">
+\( v(x)=\frac{1}{2}+\int_{0}^{x} v d x \)
+</div>
+
+<div class="l-example">
+\( f: x \rightarrow y \)
+</div>
+
+<b>Zeroth approximation: </b>
+<br>
+
+<div class="l-example">
+\( u(x)=1, \quad v(x)=\frac{1}{2} \)
+</div>
+
+<b>First approximation: </b> Put \(u(x)=1, \quad v(x)=\frac{1}{2}\) in the equation.
+
+<div class="l-example">
+\( u(x)=1+\int_{0}^{x} v d x \)
+</div>
+
+<div class="l-example">
+\( v(x)=\frac{1}{2}+\int_{0}^{x} x^{2}(u+v) d x \)
+</div>
+
+<div class="l-example">
+\( u(x)=1+\int_{0}^{x} \frac{1}{2} d x=1+\frac{1}{2} x \)
+</div>
+
+<div class="l-example">
+\( v(x)=\frac{1}{2}+\int_{0}^{x} x^{3}\left(1+\frac{1}{2}\right) d x=\frac{1}{2}+\int_{0}^{x} \frac{3}{2} x^{3} d x \Rightarrow v(x)=\frac{1}{2}+\frac{3}{8} x^{4} \)
+</div>
+
+<b>Second approximation: </b> Put \(1+\frac{x}{2}, v(x)=\frac{1}{2}+\frac{3}{8} x^{4}\) in the equation.
+<br>
+<div class="l-example">
+\( u(x)=1+\int_{0}^{x}\left(\frac{1}{2}+\frac{3}{8} x^{4}\right) d x=1+\frac{x}{2}+\frac{3 x^{5}}{40} \)
+</div>
+
+<div class="l-example">
+\( v(x)=\frac{1}{2}+\frac{x^{4}}{4}+\frac{x^{5}}{10}+\frac{x^{4}}{8}+\frac{3 x^{8}}{64}=\frac{1}{2}+\frac{3 x^{4}}{8}+\frac{x^{5}}{10}+\frac{3 x^{8}}{64} \)
+</div>
+
+<div class="l-example">
+\( u(x)=1+\frac{x}{2}+\frac{3 x^{5}}{40}+\ldots \)
+</div>
+
+<div class="l-example">
+\( v(x)=\frac{1}{2}+\frac{3 x^{4}}{8}+\frac{x^{5}}{10}+\frac{3 x^{8}}{64}+\ldots \)
+</div>
+
+<div class="l-example">
+\( v(x)=\frac{1}{2}+\int_{0}^{x} x^{3}\left(1+\frac{x}{2}+\frac{1}{2}+\frac{3}{8} x^{4}\right) d x=\frac{1}{2}+\int_{0}^{x}\left(x^{3}+\frac{x^{4}}{2}+\frac{x^{3}}{2}+\frac{3 x^{7}}{8}\right) d x \)
+</div>
+
+<br>
+<div class="red bold">Example 5.4:</div>
+
+Find the solution of nonlinear 2<sup>nd</sup> order ordinary differential equation <span class="l-example">\( u(x) . u^{\prime \prime}(x)=\left(u^{\prime}(x)\right)^{2} \)</span> with initial conditions \(u(0)=1, u^{\prime}(0)=1\) at \(x=0\) by converting it to the equivalent integral equation.
+<br>
+<br>
+<div class="red bold">Solution 5.4:</div>
+
+<div class="l-example">
+\( u(0)=1 \quad u^{\prime}(0)=1 \quad x=0 \)
+</div>
+
+<div class="l-example">
+\( u(x) . u^{\prime \prime}(x)=\left(u^{\prime}(x)\right)^{2} \)
+</div>
+
+<div class="l-example">
+Let \( u^{\prime}(x)=v \) be
+</div>
+
+<div class="l-example">
+\( u . v^{\prime}=v^{2} \Rightarrow v^{\prime}=\frac{v^{2}}{u} \)
+</div>
+
+<div class="l-example">
+\( u^{\prime}(x)=v \Rightarrow u(x)-u(0)=\int_{0}^{x} v d x \Rightarrow u(x)=1+\int_{0}^{x} v d x \) <span class="f-num">(1)</span>
+</div>
+
+<div class="l-example">
+\( v^{\prime}(x)=\frac{v^{2}}{u} \Rightarrow v(x)=1+\int_{0}^{x} \frac{v^{2}}{u} d x \)
+</div>
+
+<b>Zeroth approximation: </b> \( \mathrm{u}(\mathrm{x})=1 \mathrm{v}(\mathrm{x})=1 \).
+
+<b>First approximation: </b> Put \( u(x)=1 v(x)=1 \) in the equation
+
+<div class="l-example">
+\( u(x)=1+\int_{0}^{x} v d x \)
+</div>
+
+<div class="l-example">
+\( v(x)=1+\int_{0}^{x} \frac{v^{2}}{u} d x \)
+</div>
+
+<div class="l-example">
+\( u(x)=1+\int_{0}^{x} d x=1+x \)
+</div>
+
+<div class="l-example">
+\( v(x)=1+\int_{0}^{x} \frac{v^{2}}{u} d x=1+\int_{0}^{x} d x=1+x \)
+</div>
+
+<b>Second approximation: </b> Replace \( u(x)=1+x, v(x)=1+x \) in the equation
+
+<div class="l-example">
+\( u(x)=1+\int_{0}^{x} v d x=1+\int_{0}^{x}(1+x) d x=1+x+\frac{x^{2}}{2} \)
+</div>
+
+<div class="l-example">
+\( v(x)=1+\int_{0}^{x} \frac{v^{2}}{u} d x=1+\int_{0}^{x} \frac{(1+x)^{2}}{1+x} d x=1+\int_{0}^{x}(1+x) d x=1+x+\frac{x^{2}}{2} \)
+</div>
+
+<b>Second approximation: </b> Replace \( u(x)=1+x+\frac{x^{2}}{2}, v(x)=1+x+\frac{x^{2}}{2} \)
+
+<div class="l-example">
+\( u(x)=1+\int_{0}^{x} v d x=1+\int_{0}^{x}\left(1+x+\frac{x^{2}}{2}\right) d x=1+x+\frac{x^{2}}{2 !}+\frac{x^{3}}{3 !} \)
+</div>
+
+<div class="l-example">
+\( v(x)=1+\int_{0}^{x}\left(1+x+\frac{x^{2}}{2}\right) d x \Rightarrow 1+x+\frac{x^{2}}{2 !}+\frac{x^{3}}{3 !} \)
+</div>
+
+<div class="l-example">
+\( u(x)=x+\frac{x^{2}}{2 !}+\frac{x^{3}}{3 !}+\ldots \)
+</div>
+
+<div class="l-example">
+\( u(x)=e^{x} \)
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>

@@ -1,0 +1,87 @@
+<p>
+Consider an initial value problem given by the first-order nonlinear differential equation <span class="l-example">\( \frac{d u}{d x}=f(x, u(x)) \)</span> with initial condition \( u(a)=b \) at \( x=a \)
+</p>
+
+<p>
+This IVP can be transformed to the nonlinear integral equation and written as
+</p>
+
+<p>
+<div class="l-example">
+\( u(x)=b+\int_{a}^{x} f(x, u(x)) d x \)
+</div>
+</p>
+
+<p>
+For a first approximation we replace the \(\bm{u(x)}\) in \(\bm{f(x, u(x))}\) by \(\bm{b}\) for \(\bm{a}\).
+</p>
+
+<p>
+Second approximation, we replace it by the first approximation for the third by second and so on.
+</p>
+
+<div class="red bold">Example 5.4:</div>
+
+<p>
+Consider the first-order nonlinear differential equation <span class="l-example">\( \frac{d u}{d x}=x+u^{2} \)</span> where \(u(0)=0\) when \(x=0\) .
+</p>
+
+<div class="red bold">Solution 5.1:</div>
+
+<p>
+Determine the approximate solution by Picard’s methods. The given differential
+equation can be written as integral equation <span class="l-example">\( u(x)=\int_{a}^{x} x+u^{2}(x) d x \)</span>
+</p>
+
+<p>
+<b> Zeroth approximation:</b> \(u(x)=0\)
+</p>
+
+<p>
+<b> First approximation:</b> Put \(u(x)=0\) in \(x+u^2(x)\) yielding <span class="l-example">\( u(x)=\int_{0}^{x}(x+0) d x=\frac{x^{2}}{2} \)</span>
+</p>
+
+<p>
+<b> Second approximation:</b> Put <span class="l-example">\( u(x)=\frac{x^{2}}{2}\) in \(x+u^{2}(x) \)</span> yielding.
+</p>
+
+
+<p>
+<div class="l-example">
+\( u(x)=\int_{0}^{x}\left[x+\left(\frac{x^{2}}{2}\right)^{2}\right] d x=\int_{0}^{x}\left(x+\frac{x^{4}}{4}\right) d x=\frac{x^{2}}{2}+\frac{x^{5}}{20} \)
+</div>
+</p>
+
+<p>
+<b> Third approximation:</b> Put <span class="l-example">\( u(x)=\frac{x^{2}}{2}+\frac{x^{5}}{20} \) in \(x+u^{2} \)</span> yield.
+</p>
+
+<p>
+<div class="l-example">
+\( u(x)=\int_{0}^{x}\left[x+\left(\frac{x^{2}}{2}+\frac{x^{5}}{20}\right)^{2}\right] d x=\int_{0}^{x}\left(x+\frac{x^{4}}{4}+\frac{x^{7}}{20}+\frac{x^{10}}{400}\right) d x  \)
+</div>
+</p>
+
+<p>
+<div class="l-example">
+\( u(x)=\frac{x^{2}}{2}+\frac{x^{5}}{20}+\frac{x^{8}}{160}+\frac{x^{11}}{4400}+\ldots \)
+</div>
+</p>
+
+<p>
+Proceeding in this manner Fourth approximation can be written after same computation as.
+</p>
+
+<p>
+<b> Fourth approximation:</b>
+</p>
+
+<p>
+<div class="l-example">
+\( u(x)=\frac{x^{2}}{2}+\frac{x^{5}}{20}+\frac{x^{8}}{160}+\frac{7 x^{11}}{8800}+\frac{3 x^{14}}{49280}+\ldots \) and so on
+</div>
+</p>
+
+<p>
+This is the solution of the problem in series form.
+</p>

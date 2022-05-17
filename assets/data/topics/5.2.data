@@ -1,0 +1,65 @@
+<div class="red bold">Example 5.1:</div>
+
+<p>
+Solve the nonlinear Fredholm integral equation <span class="l-example">\( u(x)=1+\int_{0}^{1} t^{3} u^{2}(t) d t \)</span> by directional computation method.
+</p>
+
+<div class="red bold">Solution 5.1:</div>
+
+<p>
+    <div class="l-example">
+    \( u(x)=1+\alpha \lambda \) <span class="f-num">(1)</span>,
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( \alpha=\int_{0}^{1} t^{3} u^{2}(t) a \) <span class="f-num">(2)</span>,
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( u(t)=1+\alpha \lambda \) <span class="f-num">(3)</span>
+    </div>
+</p>
+<p>
+    Set (3) in (2)
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( \alpha=\int_{0}^{1} t^{3}(1+\lambda \alpha)^{2} d t \Rightarrow \alpha=\left.(1+\lambda \alpha)^{2} \frac{t^{4}}{4}\right|_{t=0} ^{1} \Rightarrow \alpha=\frac{(1+\lambda \alpha)^{2}}{4} \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( \Rightarrow 4 \alpha=(1+\lambda \alpha)^{2} \Rightarrow 4 \alpha=1+2 \lambda \alpha+\lambda^{2} \alpha^{2} \Rightarrow \lambda^{2} \alpha^{2}+(2 \alpha-4) \alpha+1=0 \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( \Rightarrow \alpha^{2}+\frac{(2 \alpha-4)}{\lambda^{2}} \alpha+\frac{1}{\lambda^{2}}=0 \)
+    </div>
+</p>
+<p>
+    <div class="l-example katex-my-1">
+    \( \Rightarrow\left(\alpha+\left(\frac{\lambda-2}{\lambda^{2}}\right)\right)^{2}=\frac{(\lambda-2)^{2}}{\lambda^{4}}-\frac{\lambda^{2}}{\lambda^{4}} \Rightarrow\left[\alpha+\left(\frac{\lambda-2}{\lambda^{2}}\right)\right]^{2}=\frac{4-4 \lambda}{\lambda^{4}} \)
+    </div>
+</p>
+
+<p>
+    <div class="l-example">
+    \( \Rightarrow \alpha+\left(\frac{\lambda-2}{\lambda^{2}}\right)=\frac{\pm 2 \sqrt{1-\lambda}}{\lambda^{2}} \Rightarrow \alpha=\frac{2-\lambda \mathrm{m} 2 \sqrt{1-\lambda}}{\lambda^{2}}, \lambda \cancel{=} 0(4) \)
+    </div>
+</p>
+<p>
+Set (4) into (1)
+</p>
+<p>
+<div class="l-example">
+\( u(x)=1+\lambda\left(\frac{2-\lambda \mathrm{m} 2 \sqrt{1-\lambda}}{\lambda^{2}}\right) \)
+</div>
+</p>
+<p>
+    <div class="l-example">
+    \( u(x)=\frac{2+2 \sqrt{1-\lambda}}{\lambda}, \quad \lambda=0 \)
+    </div>
+</p>

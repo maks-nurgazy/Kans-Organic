@@ -1,0 +1,45 @@
+<p>
+ Volterra integral equation of convolution (Faulting) type such as <span class="l-example">\( u(x)=f(x)+\lambda \int_{0}^{x} K(x-t) u(t) d t \)</span>
+type, can very easily be solved using Laplace transform method.
+Using the Laplace transform of the convolution integral we have
+<span class="l-example">\( L\left\{\int_{0}^{x} K(x-t) u(t) d t\right\}=L\{K(x)\} . L\{u(x)\} \)</span>. Thus taking Laplace transform of the equation
+<span class="l-example">\( L\{u(x)\}=L\{f(x)\}+\lambda L\{K(x)\} \cdot L\{u(x)\} \)</span> and solution for \( L\{u(x)\} \) is given by
+<span class="l-example">\( L\{u(x)\}=\frac{L\{f(x)\}}{1-\lambda L\{K(x)\}} \)</span>  and inverting this transform we obtain <span class="l-example">\( u(x)=\int_{0}^{x} \varphi(x-t) f(t) d t \)</span>
+where it is assume that <span class="l-example">\( L^{-1}\left\{\frac{1}{1-L\{K(x)\}}\right\}=\varphi(x) \)</span>
+</p>
+
+<div class="red bold">Example 3.8:</div>
+<p>
+Solve the Volterra integral equation  <span class="l-example">\( u(x)=x+\int_{0}^{x}(t-x) u(t) d t \)</span> by Laplace Transform Method.
+</p>
+
+<div class="red bold">Solution 3.8:</div>
+<p>
+Taking Laplace transform of both sides,
+</p>
+
+<p>
+   <div class="l-example">
+   \( L\{u(x)\}=L\{x\}+L\left\{\int_{0}^{x}(t-x) u(t) d t\right\}, K(x-t)=t-x \)
+   </div>
+</p>
+<p>
+    <div class="l-example">
+    \( L\{u(x)\}=L\{x\}+L\{-x\} . L\{u(x)\} \)
+    </div>
+</p>
+<p>
+   <div class="l-example">
+   \( L\{u(x)\}=\frac{1}{s^{2}}-\frac{1}{s^{2}} . L\{u(x)\} \Rightarrow\left(1+\frac{1}{s^{2}}\right) . L\{u(x)\}=\frac{1}{s^{2}} \Rightarrow \)
+   </div>
+</p>
+<p>
+    <div class="l-example">
+    \( \left(\frac{s^{2}+1}{s^{2}}\right) L\{u(x)\}=\frac{1}{s^{2}} \Rightarrow L\{u(x)\}=\frac{1}{s^{2}+1} \)
+    </div>
+</p>
+<p>
+    <div class="l-example">
+    \( u(x)=L^{-1}\left\{\frac{1}{s^{2}+1}\right\} \Rightarrow u(x)=\sin x \)
+    </div>
+</p>

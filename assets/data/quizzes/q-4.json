@@ -1,0 +1,421 @@
+{
+    "questions": [
+        {
+            "question": "Which is the equivalent  <br><span class=\"highlighted\">integral(integro-differential) equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ y' - y = 2xe^x, \\ y(0) = 0 $</span>",
+            "variants": [{
+                "title": "$ u(x) = xe^x + \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 2xe^x - \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 2xe^x + \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 2x + \\int_{0}^{x} u(t)dt $ "
+            }],
+            "answer": 2
+        }, {
+            "question": "Which is the equivalent  <br><span class=\"highlighted\">integral(integro-differential) equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ y' - 3 y = 4x^3 e^{3x},\\ y(0) = 1 $</span>",
+            "variants": [{
+                "title": "$ u(x) = 3 + 4xe^{3x} + 3 \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 3 - 4xe^{3x} - 3 \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 4xe^{3x} + 3 \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 4 + 3xe^{3x} + 4 \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 2 + 4xe^{3x} + \\int_{0}^{x} u(t)dt $ "
+            }],
+            "answer": 0
+        },
+        {
+            "question": "Which is the equivalent  <br><span class=\"highlighted\">integral equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ u'' - 6u' +  9u = 0 , \\ u(0) = 1, \\ u'(0) = 4 $</span>",
+            "variants": [{
+                "title": "$ u(x) = 1 - 2x + \\int_{0}^{x} [ 6 - 9(x - t)]u(t)dt $ "
+            }, {
+                "title": "$ u(x) = x - \\int_{0}^{x} [ -2 + 2(x - t)]u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 1 + x + \\int_{0}^{x} [ 2 + 2(x - t)]u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 1 - 2x - \\int_{0}^{x} [ -1 + 2(x - t)]u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 1 - x - \\int_{0}^{x} [ -4 + (x - t)]u(t)dt $ "
+            }],
+            "answer": 0
+        }, {
+            "question": "Which is the equivalent  <br><span class=\"highlighted\">integral(integro-differential) equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ u''' + 4u' = x, \\ u(0) = u'(0) = 0, \\ u''(0) = 1 $</span>",
+            "variants": [{
+                "title": "$ u(x) = −x − 2 \\int_0^x (x − t)u(t)dt $ "
+            }, {
+                "title": "$ u(x) = −3x − 4 \\int_0^x (x − t)^2u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 1 + \\int_{0}^{1} 4u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 3x − 2\\int_0^x (x − t)u(t)dt $ "
+            }, {
+                "title": "$ u(x) = −3x − 4 \\int_0^x (x − t)u(t)dt $ "
+            }],
+            "answer": 4
+        },
+        {
+            "question": "Find  <span class=\"highlighted\">$ c=? $</span><br>If  the equivalent integral equation of the IVP  <br>$ u''(x)-9u'(x)-7u(x)=-3x^2-1x-5,u(0)=1,u'(0)=1 $  <br>is of the form  <br>$ u(x)=a+bx+cx^2+dx^3+ex^4+\\int_0^x [f+g(x-t)]u(t)dt $.  ",
+            "variants": [{
+                "title": "-15.00 "
+            }, {
+                "title": "-2.50 "
+            }, {
+                "title": "2.50 "
+            }, {
+                "title": "-1.67 "
+            }],
+            "answer": 1
+        }, {
+            "question": "Which is the equivalent  <br><span class=\"highlighted\">integral equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ u'' - u' = 1 , \\ u(0) = 1, \\ u'(0) = 0 $</span>",
+            "variants": [{
+                "title": "$ u(x) = 1 + \\frac{1}{2}x^2 + \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 1 + x - \\frac{1}{2}x^2 + \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 1 + x + 2x^2 - \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 1 -  x + \\frac{1}{2}x^2 + \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 1 - x + x^2 + \\int_{0}^{x} u(t)dt $ "
+            }],
+            "answer": 3
+        },
+        {
+            "question": "Find  <span class=\"highlighted\">$ e=? $</span><br>If  the equivalent integral equation of the IVP  <br>$ u''(x)-6u'(x)-7u(x)=8\\sin x,u(0)=0,u'(0)=2 $  <br>is of the form  <br>$ u(x)=a+bx+c\\sin x+\\int_0^x [d+e(x-t)]u(t)dt $.  ",
+            "variants": [{
+                "title": "21 "
+            }, {
+                "title": "7 "
+            }, {
+                "title": "14 "
+            }, {
+                "title": "-7 "
+            }],
+            "answer": 1
+        }, {
+            "question": "Which is the equivalent  <br><span class=\"highlighted\">integral(integro-differential) equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ u''(x) = 2xu^2(x), \\ u(0) = 0, \\ u'(0) = 1 $</span>",
+            "variants": [{
+                "title": "$ u(x) = \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u'(x) = 1 + \\int_{0}^{x} 2tu^2(t)dt, \\ u(0) = 0 $ "
+            }, {
+                "title": "$ u(x) = 1 + \\int_{0}^{1} 4u(t)dt $ "
+            }, {
+                "title": "$ u'(x) = 1 + \\int_{0}^{x} tu^2(t)dt, \\ u(0) = 0 $ "
+            }, {
+                "title": "$ u'(x) = 1 - \\int_{0}^{x} 2tu^2(t)dt, \\ u(0) = 0 $ "
+            }],
+            "answer": 1
+        },
+        {
+            "question": "Find  <span class=\"highlighted\">$ a=? $</span><br>If the solution of the equation  <br><span class=\"highlighted\">$ u'(x)=19x^2+\\int_{-1}^1 u(t) dt, u(0)=2 $</span><br>is of the form<br><span class=\"highlighted\">$ u(x)=a+bx+cx^3 $</span>",
+            "variants": [{
+                "title": "-2 "
+            }, {
+                "title": "2 "
+            }, {
+                "title": "6 "
+            }, {
+                "title": "4 "
+            }],
+            "answer": 1
+        }, {
+            "question": "Find  <span class=\"highlighted\">$ d=? $</span><br>If  <span class=\"highlighted\">$ u''(x) + u(x) = ax+b, \\ u(0) = c,\\ u'(0) =d $</span><br>is the equivalent IVP for the equation<br><span class=\"highlighted\">$ u'(x)=12x^2+12x+20-\\int_0^x u(t) dt, u(0)=4 $.</span>",
+            "variants": [{
+                "title": "60 "
+            }, {
+                "title": "-40 "
+            }, {
+                "title": "20 "
+            }, {
+                "title": "-20 "
+            }],
+            "answer": 2
+        }, {
+            "question": "Find  <span class=\"highlighted\">$ c=? $</span><br>If  the equivalent integral equation of the IVP  <br>$ u''(x)+10u'(x)+7u(x)=6\\sin x,u(0)=1,u'(0)=2 $  <br>is of the form  <br>$ u(x)=a+bx+c\\sin x-\\int_0^x [d+e(x-t)]u(t)dt $.  ",
+            "variants": [{
+                "title": "-6 "
+            }, {
+                "title": "-12 "
+            }, {
+                "title": "6 "
+            }, {
+                "title": "-18 "
+            }],
+            "answer": 0
+        },
+        {
+            "question": "Which is the equivalent  <br><span class=\"highlighted\">integral(integro-differential) equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ y' + \\tan x y = \\cos x,\\ y(0) = 1 $</span>",
+            "variants": [{
+                "title": "$ u(x) = \\cos x - \\tan x - \\tan x \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = \\cos x - \\tan x \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = \\tan x - \\tan x \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = \\cos x - \\sin x - \\sin x \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = \\cos x + \\tan x + \\tan x \\int_{0}^{x} u(t)dt $ "
+            }],
+            "answer": 0
+        },
+        {
+            "question": "Which is the equivalent  <br><span class=\"highlighted\">integral equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ u'' - 9u' = 0 , \\ u(0) = 3, \\ u'(0) = 9 $</span>",
+            "variants": [{
+                "title": "$ u(x) = 1 - \\int_{0}^{x} u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 9 + \\int_{0}^{x} 3u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 1 + \\int_{0}^{x} 3u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 3 + \\int_{0}^{x} 9u(t)dt $ "
+            }, {
+                "title": "$ u(x) = 3 - \\int_{0}^{x} 9u(t)dt $ "
+            }],
+            "answer": 3
+        },
+        {
+            "question": "<span class=\"highlighted\">Which</span> is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm integro-differential equation</span>  <br><span class=\"highlighted\">$ u''(x) = 4x - \\sin x + \\int_{-\\pi/2}^{\\pi/2} (x - t)^2 \\ u(t) dt, u(0) =0, u'(0) = 1 \\ ? $</span>",
+            "variants": [{
+                "title": "$ u(x) = x + \\sin x $ "
+            }, {
+                "title": "$ u(x) = \\cos x $ "
+            }, {
+                "title": "$ u(x) = x - \\sin x $ "
+            }, {
+                "title": "$ u(x) = xe^x $ "
+            }, {
+                "title": "$ u(x) = \\sin x $ "
+            }],
+            "answer": 4
+        }, {
+            "question": "Find  <span class=\"highlighted\">$ \\frac{21c}{2}=? $</span><br>If the solution of the equation  <br><span class=\"highlighted\">$ u'(x)=15+12x+\\int_0^1 xt u(t) dt, u(0)=1 $</span><br>is of the form<br><span class=\"highlighted\">$ u(x)=a+bx+cx^2 $</span>",
+            "variants": [{
+                "title": "204 "
+            }, {
+                "title": "28 "
+            }, {
+                "title": "105 "
+            }, {
+                "title": "144 "
+            }],
+            "answer": 2
+        },
+        {
+            "question": "Find  <span class=\"highlighted\">$ 3b=? $</span><br>If the solution of the equation  <br><span class=\"highlighted\">$ u'(x)=9x+\\int_0^1 u(t) dt, u(0)=4 $</span><br>is of the form<br><span class=\"highlighted\">$ u(x)=a+bx+cx^2 $</span>",
+            "variants": [{
+                "title": "17 "
+            }, {
+                "title": "33 "
+            }, {
+                "title": "21 "
+            }, {
+                "title": "25 "
+            }],
+            "answer": 1
+        }, {
+            "question": "<span class=\"highlighted\">Which</span> is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm integro-differential equation</span>  <br><span class=\"highlighted\">$ u''(x) = 2 - \\cos x + \\int_{0}^{\\pi} t u(t) dt, u(0) =1, u'(0) = 0 \\ ? $</span>",
+            "variants": [{
+                "title": "$ u(x) = \\cos x $ "
+            }, {
+                "title": "$ u(x) = \\cosh x $ "
+            }, {
+                "title": "$ u(x) = xe^x $ "
+            }, {
+                "title": "$ u(x) = \\sin x $ "
+            }, {
+                "title": "$ u(x) = e^x $ "
+            }],
+            "answer": 0
+        },
+        {
+            "question": "<span class=\"highlighted\">$ u(x) = 2x^2 $  </span>is a solution of the <span class=\"highlighted\">Fredholm integral equation</span><br><span class=\"highlighted\">$ u'(x) = \\frac{2}{3} + \\int_{0}^{1} t u(t) dt. $</span><br>",
+            "variants": [{
+                "title": "True "
+            }, {
+                "title": "False "
+            }],
+            "answer": 1
+        },
+        {
+            "question": "<span class=\"highlighted\">$ u(x) = e^x $  </span>is a solution of the <span class=\"highlighted\">Fredholm integral equation</span><br><span class=\"highlighted\">$ u''(x) = e^x - \\frac{4}{3}x + \\int_{0}^{1} xt u(t) dt,u(0) = 1, u'(0) = 2 $</span><br>",
+            "variants": [{
+                "title": "True "
+            }, {
+                "title": "False "
+            }],
+            "answer": 1
+        },
+        {
+            "question": "<span class=\"highlighted\">$ u(x) = e^{-x} $  </span>is a solution of the <span class=\"highlighted\">Volterra integro-differential equation</span><br><span class=\"highlighted\">$ u''(x) = 1 - xe^{-x} - \\int_{0}^{x} t u(t) dt, \\ u(0) = 1, u'(0) = -1. $</span><br>",
+            "variants": [{
+                "title": "True "
+            }, {
+                "title": "False "
+            }],
+            "answer": 0
+        }, {
+            "question": "<span class=\"highlighted\">$ u(x) = 1 $  </span>is a solution of the <span class=\"highlighted\">Fredholm integral equation</span><br><span class=\"highlighted\">$ u'(x) = \\frac{2}{3} + \\int_{0}^{1} t u(t) dt. $</span><br>",
+            "variants": [{
+                "title": "True "
+            }, {
+                "title": "False "
+            }],
+            "answer": 1
+        },
+        {
+            "question": "<span class=\"highlighted\">Which</span> is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm integro-differential equation</span>  <br><span class=\"highlighted\">$ u''(x) = -1 - \\sin x + \\int_{0}^{\\pi/2} t \\ u(t) dt, u(0) =0, u'(0) = 1 \\ ? $</span>",
+            "variants": [{
+                "title": "$ u(x) = \\cos x $ "
+            }, {
+                "title": "$ u(x) = xe^x $ "
+            }, {
+                "title": "$ u(x) = \\sin x $ "
+            }, {
+                "title": "$ u(x) = e^x $ "
+            }, {
+                "title": "$ u(x) = e^{-x} $ "
+            }],
+            "answer": 2
+        }, {
+            "question": "Find  <span class=\"highlighted\">$ 6b=? $</span><br>If the solution of the equation  <br><span class=\"highlighted\">$ u'(x)=7x^2+\\int_{-1}^1 u(t) dt, u(0)=5 $</span><br>is of the form<br><span class=\"highlighted\">$ u(x)=a+bx+cx^3 $</span>",
+            "variants": [{
+                "title": "60 "
+            }, {
+                "title": "32 "
+            }, {
+                "title": "37 "
+            }, {
+                "title": "47 "
+            }],
+            "answer": 0
+        },
+        {
+            "question": "Find  <span class=\"highlighted\">$ 6b=? $</span><br>If the solution of the equation  <br><span class=\"highlighted\">$ u'(x)=14x^2+\\int_0^1 u(t) dt, u(0)=1 $</span><br>is of the form<br><span class=\"highlighted\">$ u(x)=a+bx+cx^3 $</span>",
+            "variants": [{
+                "title": "16 "
+            }, {
+                "title": "19 "
+            }, {
+                "title": "26 "
+            }, {
+                "title": "22 "
+            }],
+            "answer": 2
+        }, {
+            "question": "<span class=\"highlighted\">Which</span> is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm integro-differential equation</span>  <br><span class=\"highlighted\">$ u''(x) = 32x + \\int_{-1}^{1} (1 - xt)u(t) dt, u(0) =1, u'(0) = 0 \\ ? $</span>",
+            "variants": [{
+                "title": "$ u(x) = x^2 + 3x^3 $ "
+            }, {
+                "title": "$ u(x) = 1 - \\frac{2}{3}x^2 + 5x^3 $ "
+            }, {
+                "title": "$ u(x) = 1 + \\frac{3}{2}x^2 + 5x^3 $ "
+            }, {
+                "title": "$ u(x) = 3 + 9x^2 $ "
+            }, {
+                "title": "$ u(x) = 1 + \\frac{3}{2}x^2 + 2x^3 $ "
+            }],
+            "answer": 2
+        },
+        {
+            "question": "<span class=\"highlighted\">Which</span> is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm integro-differential equation</span>  <br><span class=\"highlighted\">$ u''(x) = -18 + \\int_{-1}^{1} (1 - xt)u(t) dt, u(0) =3, u'(0) = 0 \\ ? $</span>",
+            "variants": [{
+                "title": "$ u(x) = x^2 + 3x^3 $ "
+            }, {
+                "title": "$ u(x) = 9x^2 - x^3 $ "
+            }, {
+                "title": "$ u(x) = 3 + 9x^2 $ "
+            }, {
+                "title": "$ u(x) = 3 − 9x^2 $ "
+            }, {
+                "title": "$ u(x) = 9x^2 + x^3 $ "
+            }],
+            "answer": 3
+        }, {
+            "question": "Find  <span class=\"highlighted\">$ a=? $</span><br>If the solution of the equation  <br><span class=\"highlighted\">$ u'(x)=12+8x+\\int_{-1}^1 xt u(t) dt, u(0)=4 $</span><br>is of the form<br><span class=\"highlighted\">$ u(x)=a+bx+cx^2 $</span>",
+            "variants": [{
+                "title": "12 "
+            }, {
+                "title": "8 "
+            }, {
+                "title": "4 "
+            }, {
+                "title": "-4 "
+            }],
+            "answer": 2
+        },
+        {
+            "question": "<span class=\"highlighted\">Which</span> of the following is correct  <br><span class=\"highlighted\">classification </span>of the <span class=\"highlighted\">integral equation?</span><br><span class=\"highlighted\">$ u'(x) = 1 + 4\\int_{0}^{x} e^{-2t} u^3(t) dt, u(0) = 1 $</span>",
+            "variants": [{
+                "title": "Volterra integral equation, nonlinear "
+            }, {
+                "title": "Volterra integro-differential equation, nonlinear "
+            }, {
+                "title": "Volterra integro-differential equation, linear "
+            }, {
+                "title": "Fredholm integro-differential equation, nonlinear "
+            }, {
+                "title": "Fredholm integro-differential equation, linear "
+            }],
+            "answer": 1
+        }, {
+            "question": "<span class=\"highlighted\">Which</span> of the following is correct  <br><span class=\"highlighted\">classification </span>of the <span class=\"highlighted\">integral equation?</span><br><span class=\"highlighted\">$ u''(x) = \\frac{x^2}{2} - \\int_{0}^{x} (x - t)u^2(t) dt, \\ u(0) = 1, \\ u'(0) = 0 $</span>",
+            "variants": [{
+                "title": "Linear Fredholm integro-differential equation "
+            }, {
+                "title": "Nonhomogeneous linear Volterra integral equation "
+            }, {
+                "title": "Nonhomogeneous nonlinear Volterra integral equation "
+            }, {
+                "title": "Nonlinear Volterra integro-differential equation "
+            }, {
+                "title": "Nonhomogeneous linear Fredholm integral equation "
+            }],
+            "answer": 3
+        },
+        {
+            "question": "<span class=\"highlighted\">Which</span> of the following is correct  <br><span class=\"highlighted\">classification </span>of the <span class=\"highlighted\">integral equation?</span><br><span class=\"highlighted\">$ u'''(x) = \\sin x -x + \\int_{0}^{\\pi} xtu'(t) dt, \\ u(0) = 1, \\ u'(0) = 0, \\ u''(0) = -1 $</span>",
+            "variants": [{
+                "title": "Nonlinear Volterra integro-differential equation "
+            }, {
+                "title": "Nonhomogeneous linear Volterra integral equation "
+            }, {
+                "title": "Linear Fredholm integro-differential equation "
+            }, {
+                "title": "Nonhomogeneous linear Fredholm integral equation "
+            }, {
+                "title": "Nonhomogeneous nonlinear Volterra integral equation "
+            }],
+            "answer": 2
+        },
+        {
+            "question": "<span class=\"highlighted\">$ u(x) = e^x $  </span>is a solution of the <span class=\"highlighted\">Fredholm integral equation</span><br><span class=\"highlighted\">$ u''(x) = e^x - \\frac{4}{3}x + \\int_{0}^{1} xt u(t) dt,u(0) = 1, u'(0) = 2 $</span><br>",
+            "variants": [{
+                "title": "True "
+            }, {
+                "title": "False "
+            }],
+            "answer": 1
+        },
+        {
+            "question": "<span class=\"highlighted\">Which</span> of the following is correct  <br><span class=\"highlighted\">classification </span>of the <span class=\"highlighted\">integral equation?</span><br><span class=\"highlighted\">$ u'''(x) = -12x^4 + \\int_{0}^{x} (x - t) u(t) dt, u(0) = u'(0) = 0, u''(0) = 2 $</span>",
+            "variants": [{
+                "title": "Volterra integral equation, nonlinear "
+            }, {
+                "title": "Fredholm integral equation, nonlinear "
+            }, {
+                "title": "Fredholm integro-differential equation, nonlinear "
+            }, {
+                "title": "Volterra integro-differential equation, nonlinear "
+            }, {
+                "title": "Volterra integro-differential equation, linear "
+            }],
+            "answer": 4
+        }
+    ]
+}

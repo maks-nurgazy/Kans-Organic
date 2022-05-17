@@ -1,0 +1,1324 @@
+{
+    "questions": [
+      {
+        "question": "<br>The <span class=\"highlighted\">standard form</span> of a<span class=\"highlighted\">  Fredholm linear integral equation</span>  is of the form <br/><br><span class=\"highlighted\">$  \\psi(x) u(x) = f(x) + \\lambda \\int_{a}^{b}\\ K(x,t) \\ u(t)\\ dt, \\ \\ a \\leq x,t \\leq b  $</span>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "An <span class=\"highlighted\">integral equation</span> is an equation having the  <br>unknown function <span class=\"highlighted\">u(x)</span>  and its derivatives.",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">$ F(x) = \\int_{0}^{x} (x - t)^3 u(t) dt \\Rightarrow F''(x) = ? $</span>",
+        "variants": [{
+          "title": "$ \\int_{0}^{x}6(x - t) u(t) dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x}3(x - t)^2 u(t) dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x}6 u(t) dt $ "
+        }, {
+          "title": "$ u(x) $ "
+        }, {
+          "title": "$ 6 u(x) $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "Which is the equivalent  <br><span class=\"highlighted\">integral equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ u'' - 5u' + 4u = -1 + 4x , \\ u(0) = 3, \\ u'(0) = 9 $</span>",
+        "variants": [{
+          "title": "$ u(x) = 3 - 6x - \\frac{1}{2} x^2 + \\frac{2}{3}x^3 + \\int_{0}^{x} [5 - 4(x - t)]u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 3 + 6x + \\frac{1}{2} x^2 - \\frac{2}{3}x^3 + \\int_{0}^{x} [5 - 4(x - t)]u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 3 - 4x - \\frac{1}{2} x^2 + \\frac{2}{3}x^3 + \\int_{0}^{x} [3 - 6(x - t)]u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 2 - 3x - \\frac{3}{2} x^2 + \\frac{3}{2}x^3 + \\int_{0}^{x} [2 - 3(x - t)]u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 6 - 3x - \\frac{1}{2} x^2 + \\frac{2}{3}x^3 + \\int_{0}^{x} [4 - 3(x - t)]u(t)dt $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) =3x − 5x^3 +  \\int_{-1}^{1} (1 - xt ) u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = -6x $ "
+        }, {
+          "title": "$ u(x) = 3x - 5x^3 $ "
+        }, {
+          "title": "$ u(x) = -2x+ 2x^2 $ "
+        }, {
+          "title": "$ u(x) = 3x + 5x^3 $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm Integral equation</span><br><span class=\"highlighted\">$ u(x) = x+ (1 - x) e^{x}  + \\int_0^{1} x^2 e^{t(x - 1)} u(t) dt $</span><br>(Hint: using Adomian Decomposition Method)",
+        "variants": [{
+          "title": "$ u(x) = \\sin x $   "
+        }, {
+          "title": "$ u(x) = e^x $ "
+        }, {
+          "title": "$ u(x) = x + e^x $   "
+        }, {
+          "title": "$ u(x) = e^{-x} $ "
+        }, {
+          "title": "$ u(x) = \\cos x $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 1 - \\int_{0}^{\\pi/4} \\sec^2 x u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = \\sec^2 x $ "
+        }, {
+          "title": "$ u(x) = \\frac{\\pi}{8}\\sin^2 x $ "
+        }, {
+          "title": "$ u(x) =  1 - \\frac{\\pi}{8}\\sec^2 x $ "
+        }, {
+          "title": "$ u(x) = x\\sec x \\tan x $ "
+        }, {
+          "title": "$ u(x) = 1 + \\frac{\\pi}{8}\\sec^2 x $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the equivalent <span class=\"highlighted\">IVP </span>to the <span class=\"highlighted\">Integral equation</span><br><span class=\"highlighted\">$ u(x) = -5 + 6x + \\int_{0}^{x}( 5 - 6x + 6t) u(t) dt \\ ? $</span>",
+        "variants": [{
+          "title": "$ u''(x) + 5u′(x) - 6u(x) = 0, u(0) = −5, u' (0) = −19 $ "
+        }, {
+          "title": "$ u'''(x) − 5u′'(x) + 6u'(x) = 0, u(0) = −5, u' (0) = −19 $ "
+        }, {
+          "title": "$ u''(x) − 5u′(x) + 6u(x) = 0, u(0) = −5, u' (0) = −19 $ "
+        }, {
+          "title": "$ u''(x) − 5u′(x) + 6u(x) = 0, u(0) = 0, u' (0) = −9 $ "
+        }, {
+          "title": "$ u''(x) − 2u′(x) + 3u(x) = 0, u(0) = −3, u' (0) = −1 $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 2 + 5x - 3x^2 +  \\int_{-1}^{1} (1 - xt ) u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = -2x+ 2x^2 $ "
+        }, {
+          "title": "$ u(x) = -6x $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = 3x + 3x^2 $ "
+        }, {
+          "title": "$ u(x) = 3x - 3x^2 $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> is the equivalent <span class=\"highlighted\">Integral Equation</span> for the <span class=\"highlighted\">BVP</span><br><span class=\"highlighted\">$ y'' + 4y = 0, 0&lt; x &lt; 1, y(0) = y(1) = 0 ? $</span>",
+        "variants": [{
+          "title": "$ u(x) = cos x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}4t(1 - x),\\;0 \\le t \\le x\\\\4x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}9t(1 + x),\\;0 \\le t \\le x\\\\9x(1 + t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = 1 + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t(1 - x),\\;0 \\le t \\le x\\\\2x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}4t(1 - x),\\;0 \\le t \\le x\\\\4x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "u(x)=x2+∫10K(x,t)u(t)dt$ u(x) = x^2 + \\int_0^1 K(x, t)u(t)dt $, where K(x,t)={4x(1−x),0≤t≤x4t(1−t),x≤t≤1$ K(x,t) = \\left\\{ \\begin{array}{l}4x(1 - x),\\;0 \\le t \\le x\\\\4t(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the  <br>Fredholm Integral equation<br><span class=\"highlighted\">$ u(x) =  e^x + 12x^2 + (3 + e)x − 4 −  \\int_{0}^{1} (x - t) u(t) dt ? $</span><br><span class=\"highlighted\">(Hint: using the Modified Decomposition Method   )</span>",
+        "variants": [{
+          "title": "$ u(x) = e^x + x^2 $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = e^{-x} + 12x^2 $ "
+        }, {
+          "title": "$ u(x) = e^x - 12x^2 $ "
+        }, {
+          "title": "$ u(x) = e^x + 12x^2 $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "Which is a solution of the <span class=\"highlighted\">Fredholm  </span><span class=\"highlighted\">integral equation</span><br><span class=\"highlighted\">$ u(x) = \\frac{5}{6}x - \\frac{1}{9} + \\frac{1}{3}\\int_{0}^{1} (x + t) u(t) \\ dt \\ \\ ? $</span>",
+        "variants": [{
+          "title": "$ u(x) = \\sin x $ "
+        }, {
+          "title": "$ u(x) = \\cos x $ "
+        }, {
+          "title": "$ u(x) = 2x $ "
+        }, {
+          "title": "$ u(x) = x $ "
+        }, {
+          "title": "$ u(x) = e^x $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> of the following is correct  <br><span class=\"highlighted\">classification </span>of the <span class=\"highlighted\">integral equation?</span><br><span class=\"highlighted\">$ u(x) = e^x + \\int_{0}^{x} t^2 u^2(t) dt $</span>",
+        "variants": [{
+          "title": "Nonhomogeneous linear Fredholm integral equation   "
+        }, {
+          "title": "Linear Fredholm integro-differential equation "
+        }, {
+          "title": "Nonlinear Volterra integro-differential equation "
+        }, {
+          "title": "Nonhomogeneous linear Volterra integral equation "
+        }, {
+          "title": "Nonhomogeneous nonlinear Volterra integral equation "
+        }],
+        "answer": 4
+      },
+      {
+        "question": "<br><span class=\"highlighted\">$ \\alpha(x) $, and $ \\beta(x) $,</span> in  a  typical <span class=\"highlighted\">integral equation</span><br><span class=\"highlighted\">$ u(x) = f(x) + \\int_{\\alpha (x)}^{\\beta(x)}\\ K(x,t) \\ u(t)\\ dt. $</span><br>is called <span class=\"highlighted\">kernel functions of the equation</span>.",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> is the equivalent <span class=\"highlighted\">Integral Equation</span> for the <span class=\"highlighted\">BVP</span><br><span class=\"highlighted\">$ y'' + 4y = sinx, 0&lt; x &lt; 1, y(0) = 0,y(1) = 0 ? $</span>",
+        "variants": [{
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}4t(1 - x),\\;0 \\le t \\le x\\\\4x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t(1 - x),\\;0 \\le t \\le x\\\\2x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}4x(1 - x),\\;0 \\le t \\le x\\\\4t(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = cos x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}t(1 - x),\\;0 \\le t \\le x\\\\x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}4t(1 + x),\\;0 \\le t \\le x\\\\4x(1 + t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> of the following is correct  <br><span class=\"highlighted\">classification </span>of the <span class=\"highlighted\">integral equation?</span><br><span class=\"highlighted\">$ u'''(x) = -12x^4 + \\int_{0}^{x} (x - t) u(t) dt, u(0) = u'(0) = 0, u''(0) = 2 $</span>",
+        "variants": [{
+          "title": "Volterra integro-differential equation, linear "
+        }, {
+          "title": "Volterra integral equation, nonlinear "
+        }, {
+          "title": "Fredholm integral equation, nonlinear "
+        }, {
+          "title": "Volterra integro-differential equation, nonlinear "
+        }, {
+          "title": "Fredholm integro-differential equation, nonlinear "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 1 + x + e^x - \\frac{2}{3} \\int_{0}^{1} xt u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = e^{-x} $ "
+        }, {
+          "title": "$ u(x) =  1 + e^x $ "
+        }, {
+          "title": "$ u(x) =   e^x $ "
+        }, {
+          "title": "$ u(x) = 2 + 3e^x $ "
+        }, {
+          "title": "$ u(x) = 1 - e^x $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the equivalent <span class=\"highlighted\">IVP </span>to the <span class=\"highlighted\">Integral equation</span><br><span class=\"highlighted\">$ u(x) = x + \\int_{0}^{x}(t - x) u(t) dt \\ ? $</span>",
+        "variants": [{
+          "title": "$ u'(x) + u(x) = 0; \\ u(0) =1 $ "
+        }, {
+          "title": "$ u''(x) - u(x) = 0; \\ u(0) =1 $ "
+        }, {
+          "title": "$ u''(x) + u(x) = 0; \\ u(0) =1, \\ u'(0) = 1 $ "
+        }, {
+          "title": "$ u''(x) - u'(x) = 0; \\ u(0) =1,u'(0) = 1 $ "
+        }, {
+          "title": "$ u'(x) - u(x) = 0; \\ u(0) = 0 $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "An <span class=\"highlighted\">integral equation</span> is an equation in which the  <br>unknown function <span class=\"highlighted\">u(x)</span> to be determined  <br>appears under the integral sign.",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 4 + 45x + 26x^2 −  \\int_{0}^{1} (1 + 30xt^2 + 12x^2t)u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 3 + 2x + 2x^3 $ "
+        }, {
+          "title": "$ u(x) = 2 + x + 2x^2 $ "
+        }, {
+          "title": "$ u(x) = 1 - 2x - 3x^2 $ "
+        }, {
+          "title": "$ u(x) = 4 + 3x + x^2 $ "
+        }, {
+          "title": "$ u(x) = 1 + 2x + 3x^2 $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 5x + \\int_{-1}^{1} ( 1 - xt) u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 6x $ "
+        }, {
+          "title": "$ u(x) = 3x $ "
+        }, {
+          "title": "$ u(x) = 5x $ "
+        }, {
+          "title": "$ u(x) = 4x $ "
+        }, {
+          "title": "$ u(x) = x $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">$ F(x) = \\int_{0}^{x} xt u(t) dt \\Rightarrow F''(x) = ?  $</span>",
+        "variants": [{
+          "title": "$   x^2u''(x) + x u'(x) $ "
+        }, {
+          "title": "$   xu'(x) + x^3 u(x) $ "
+        }, {
+          "title": "$   x^2u''(x) + 3x u'(x) $ "
+        }, {
+          "title": "$ x^2u'(x) + 3x u(x) $ "
+        }, {
+          "title": "$ xu'(x) + 3x^2 u(x) $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm Integral equation</span><br><span class=\"highlighted\">$ u(x) = 1 - \\frac{1}{15} x^2 + \\int_{-1}^{1} (xt + x^2t^2) u(t) dt $</span><br>(Hint: using Adomian Decomposition Method)",
+        "variants": [{
+          "title": "$ u(x) = \\cos x $   "
+        }, {
+          "title": "$ u(x) = 1 + x^2 $ "
+        }, {
+          "title": "$ u(x) = 2x - x^2 $ "
+        }, {
+          "title": "$ u(x) = 1 - x^2 $ "
+        }, {
+          "title": "$ u(x) = 2x + x^2 $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">What </span>is the value of <span class=\"highlighted\">$ f(x) =? $</span><br>If    <span class=\"highlighted\">$ u(x) = e^{4x} $  </span><br><span class=\"highlighted\">is a solution of the V</span><span class=\"highlighted\">olterra  </span><span class=\"highlighted\">integral equation</span><br><span class=\"highlighted\">$ u(x) = f(x) + 16 \\int_{0}^{x}(x - t) u(t) \\ dt $</span>",
+        "variants": [{
+          "title": "$ 1 - x $ "
+        }, {
+          "title": "$ 1 - 4x $ "
+        }, {
+          "title": "$ 1 + 4x $ "
+        }, {
+          "title": "$ 4x $ "
+        }, {
+          "title": "$ 1 + 2x $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "Find  <span class=\"highlighted\">$ c=? $</span><br>If  the equivalent integral equation of the IVP  <br>$ u''(x)+6u'(x)+7u(x)=9\\sin x,u(0)=2,u'(0)=0 $  <br>is of the form  <br>$ u(x)=a+bx+c\\sin x-\\int_0^x [d+e(x-t)]u(t)dt $.  ",
+        "variants": [{
+          "title": "9 "
+        }, {
+          "title": "-18 "
+        }, {
+          "title": "-27 "
+        }, {
+          "title": "-9 "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the  <br>Fredholm Integral equation<br><span class=\"highlighted\">$ u(x) =   e^{2x} - \\frac{1}{4}(e^2 - 1)x + \\int_{0}^{1} xt u(t) dt ? $</span><br>(Hint: using Modified Decomposition Method)",
+        "variants": [{
+          "title": "$ u(x) = e^{2x} $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = e^{-2x} $ "
+        }, {
+          "title": "$ u(x) = x^3 $ "
+        }, {
+          "title": "$ u(x) = e^{x} $ "
+        }],
+        "answer": 0
+      },
+      {
+        "question": "<br>A <span class=\"highlighted\">typical form</span> of an<span class=\"highlighted\"> integral equation</span> in u(x) is of the  form <br/><br><span class=\"highlighted\">$ u(x) = f(x) + \\lambda \\int_{\\alpha (x)}^{\\beta(x)}\\ K(x,t) \\ u(t)\\ dt. $</span>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm Integral equation</span><br><span class=\"highlighted\">$ u(x) =e^x + 1 − e + \\int_0^1 u(t) dt $</span><br>(Hint: using Adomian Decomposition Method)",
+        "variants": [{
+          "title": "$ u(x) = e^x $ "
+        }, {
+          "title": "$ u(x) = \\sin x $ "
+        }, {
+          "title": "$ u(x) = e^{-x} $ "
+        }, {
+          "title": "$ u(x) = x + e^x $   "
+        }, {
+          "title": "$ u(x) = \\cos x $   "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">$ u(x) = x $  </span>is a solution of the <span class=\"highlighted\">Fredholm integral equation</span><br><span class=\"highlighted\">$ u(x) = x - \\frac{\\pi}{12} + \\frac{1}{3} \\int_{0}^{1} \\frac{1}{1 + u^2(t)} dt. $</span><br>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 3x^2 − 5x^3 +  \\int_{-1}^{1} x^4 t u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = x^2 + x^4 $ "
+        }, {
+          "title": "$ u(x) = 3x^2 − 5x^3 − 2x^4 $ "
+        }, {
+          "title": "$ u(x) = 2x^3 − 3x^5 − 4x^6 $ "
+        }, {
+          "title": "$ u(x) = 3x^2 + 5x^3 + 2x^4 $ "
+        }, {
+          "title": "$ u(x) = 4x^5 - 5x^7 $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the equivalent <span class=\"highlighted\">IVP </span>to the <span class=\"highlighted\">Integral equation</span><br><span class=\"highlighted\">$ u(x) = \\tan x - \\int_{0}^{x} u(t) dt, \\ x&lt;\\frac{\\pi}{2} \\ ? $</span>",
+        "variants": [{
+          "title": "u′(x)+u(x)=0,u(0)=1$ u′(x) + u(x) = 0, u(0) = 1 $ "
+        }, {
+          "title": "$ u′(x) - u(x) = sec^2x, u(0) = 0 $ "
+        }, {
+          "title": "$ u′(x) + u(x) = sec^2x, u(0) = 0 $ "
+        }, {
+          "title": "$ u′(x) + u(x) = cos^2x, u(0) = 1 $ "
+        }, {
+          "title": "$ u′(x) + u(x) = sin^2x, u(0) = 0 $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 2x + e^x - \\frac{3}{4} \\int_{0}^{1} xt u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = x - e^x $ "
+        }, {
+          "title": "$ u(x) = e^{-x} $ "
+        }, {
+          "title": "$ u(x) = x + 3e^x $ "
+        }, {
+          "title": "$ u(x) = x + e^x $ "
+        }, {
+          "title": "$ u(x) =   e^x $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the  <br>Fredholm Integral equation<br><span class=\"highlighted\">$ u(x) =   \\frac{2}{15}+ \\frac{7}{12}x + x^2 + x^3 −  \\int_{0}^{1} (1 + x - t) u(t) dt ? $</span><br><span class=\"highlighted\">(Hint: using the Modified Decomposition Method   )</span>",
+        "variants": [{
+          "title": "$ u(x) = x^3 $ "
+        }, {
+          "title": "$ u(x) = xe^{-x} $ "
+        }, {
+          "title": "$ u(x) = x^2 + x^3 $ "
+        }, {
+          "title": "$ u(x) = x^2 - x^3 $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> is the equivalent <span class=\"highlighted\">Integral Equation</span> for the <span class=\"highlighted\">BVP</span><br><span class=\"highlighted\">$ y'' + 2y = 4, 0&lt; x &lt; 1, y(0) =0,   y'(1) = 1 ? $</span>",
+        "variants": [{
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}4x(1 - x),\\;0 \\le t \\le x\\\\4t(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = 4 - 2x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t,\\;0 \\le t \\le x\\\\2x,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = -2x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}tx(1 - x),\\;0 \\le t \\le x\\\\x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = 2x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t,\\;0 \\le t \\le x\\\\2x,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = 4 + 2x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}t,\\;0 \\le t \\le x\\\\x,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<br>The <span class=\"highlighted\">standard form</span> of a<span class=\"highlighted\">  Fredholm linear integral equation</span>  <span class=\"highlighted\">of 2.kind</span> is of the form <br/><br><span class=\"highlighted\">$ u(x) = f(x) + \\lambda \\int_{a}^{b}\\ K(x,t) \\ u(t)\\ dt, \\ \\ a \\leq x,t \\leq b $</span>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 2 − 2x + 5x^4 + 7x^5 + \\int_{-1}^{1} ( 1 - xt) u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 4x^5 - 5x^7 $ "
+        }, {
+          "title": "$ u(x) = 5x^4 - 7x^5 $ "
+        }, {
+          "title": "$ u(x) = 5x^4 + 7x^5 $ "
+        }, {
+          "title": "$ u(x) = x^4 + x^5 $ "
+        }, {
+          "title": "$ u(x) = 4x^5 + 5x^7 $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "<span class=\"highlighted\">$ \\frac{d}{dx}\\int_{x}^{x^2} e^{xt} u(t)dt = ? $</span>",
+        "variants": [{
+          "title": "$ e^x - e^{x^2} + \\int_{x}^{x^2}t e^{xt}u(t)dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x}(x + t)^4u(t)dt $ "
+        }, {
+          "title": "$ 2xe^x + e^{x^2} + \\int_{x}^{x^2}t e^{xt}u(t)dt $ "
+        }, {
+          "title": "$ 2xe^x - e^{x^2} + \\int_{x}^{x^2}t e^{xt}u(t)dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x}3(x + t)^2u(t)dt $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "Which is the equivalent  <br><span class=\"highlighted\">integral equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ u'' + u = 3 , \\ u(0) = 0, \\ u'(0) = 2 $</span>",
+        "variants": [{
+          "title": "$ u(x) = 2x + \\frac{3}{2}x^2 + \\int_{0}^{x} (x - t) u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 2x + \\frac{3}{2}x^2 + \\int_{0}^{x} (t - x) u(t)dt $ "
+        }, {
+          "title": "$ u(x) = x + \\frac{1}{2}x^2 + \\int_{0}^{x} 2(t - x) u(t)dt $ "
+        }, {
+          "title": "$ u(x) = x + \\frac{2}{3}x^2 + \\int_{0}^{x} (x - t) u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 2x - \\frac{3}{2}x^2 - \\int_{0}^{x} (t - x) u(t)dt $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> of the following is correct  <br><span class=\"highlighted\">classification </span>of the <span class=\"highlighted\">integral equation?</span><br><span class=\"highlighted\">$ u(x) = 4x + 5 + \\int_{0}^{1} (x - t)^3 u(t)dt $</span>",
+        "variants": [{
+          "title": "Volterra, linear, homogeneous "
+        }, {
+          "title": "Fredholm, linear, homogeneous "
+        }, {
+          "title": "Fredholm, nonlinear, homogeneous "
+        }, {
+          "title": "Volterra, nonlinear, homogeneous "
+        }, {
+          "title": "Fredholm, linear, nonhomogeneous "
+        }],
+        "answer": 4
+      },
+      {
+        "question": "<span class=\"highlighted\">Which </span>is the equivalent <span class=\"highlighted\">IVP </span>to the <span class=\"highlighted\">Integral equation</span><br><span class=\"highlighted\">$ u(x) = x^4  + x^2 + 2\\int_{0}^{x} (x - t)^2 u(t) dt \\ ? $</span>",
+        "variants": [{
+          "title": "$ u'''(x) - 4u(x) = 24x, u(0) = u′(0) = 0, \\ u''(0) = 2 $ "
+        }, {
+          "title": "$ u'''(x) - 4u(x) = 2x, u(0) = u′(0) = 0, \\ u''(0) = 2 $ "
+        }, {
+          "title": "$ u'''(x) = 2u'(x) + u(x), u(0) = u′(0) = 1, u''(0) =0 $ "
+        }, {
+          "title": "$ u'''(x) + u(x) = 4x, u(0) = u′(0) = 1, \\ u''(0) = 2 $ "
+        }, {
+          "title": "$ u''(x) - u(x) = \\cos x, u(0) = 0,\\ u′(0) = 0 $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">$ u(x) = \\sin x $  </span>is a solution of the <span class=\"highlighted\">Volterra integral equation</span><br><span class=\"highlighted\">$ u(x) = x - \\int_{0}^{x}(x - t) u(t) dt $</span><br>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm Integral equation</span><br><span class=\"highlighted\">$ u(x) =\\pi x + \\sin2 x + x \\int_{-\\pi}^{\\pi} t u(t) dt $</span><br>(Hint: using Adomian Decomposition Method)",
+        "variants": [{
+          "title": "$ u(x) = x + e^x $   "
+        }, {
+          "title": "$ u(x) = \\sin 2x $ "
+        }, {
+          "title": "$ u(x) = e^{-x} $ "
+        }, {
+          "title": "$ u(x) = e^x $ "
+        }, {
+          "title": "$ u(x) = \\cos 2x $   "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> of the following is <span class=\"highlighted\">NOT</span> a <span class=\"highlighted\">class </span>of <span class=\"highlighted\">integral equations</span>?",
+        "variants": [{
+          "title": "Singular Integral Equations "
+        }, {
+          "title": "Bernoulli Integral Equations "
+        }, {
+          "title": "Nonlinear Integral Equations "
+        }, {
+          "title": "Linear Integral Equations "
+        }],
+        "answer": 1
+      }, {
+        "question": "<br>The <span class=\"highlighted\">standard form</span> of a<span class=\"highlighted\">  Fredholm linear integral equation</span>  <span class=\"highlighted\">of 1.kind</span> is of the form <br/><br><span class=\"highlighted\">$ f(x) =  \\lambda \\int_{a}^{b}\\ K(x,t) \\ u(t)\\ dt, \\ \\ a \\leq x,t \\leq b $</span>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the  <br>Fredholm Integral equation<br><span class=\"highlighted\">$ u(x) = \\frac{1}{1 + x^2} - 2\\sinh \\frac{\\pi}{4} + \\int_{-1}^{1} e^{\\arctan t} u(t) dt ? $</span><br><span class=\"highlighted\">(Hint: using the Modified Decomposition Method   )</span>",
+        "variants": [{
+          "title": "$ u(x) = \\frac{1}{1 + x^2} $ "
+        }, {
+          "title": "$ u(x) = e^{4x} $ "
+        }, {
+          "title": "$ u(x) = \\frac{1}{x^2} $ "
+        }, {
+          "title": "$ u(x) = \\frac{1}{1 - x^2} $ "
+        }, {
+          "title": "$ u(x) = - \\frac{1}{1 + x^2} $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = −11 + 9x + x^3 + x^4 −  \\int_{0}^{1} (20x − 30t)u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = x^3 - x^4 $ "
+        }, {
+          "title": "$ u(x) = x^2 + x^3 $ "
+        }, {
+          "title": "$ u(x) = x^3 + x^4 $ "
+        }, {
+          "title": "$ u(x) = 2x^3 + 3x^4 $ "
+        }, {
+          "title": "$ u(x) = x + x^2 $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "<br><span class=\"highlighted\">$ \\alpha(x) $, and $ \\beta(x) $,</span> in  a  typical <span class=\"highlighted\">integral equation</span><br><span class=\"highlighted\">$ u(x) = f(x) + \\int_{\\alpha (x)}^{\\beta(x)}\\ K(x,t) \\ u(t)\\ dt. $</span><br>is called <span class=\"highlighted\">limits of integration</span>.",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> is the equivalent <span class=\"highlighted\">Integral Equation</span> for the <span class=\"highlighted\">BVP</span><br><span class=\"highlighted\">$ y'' + 4y = 0, 0&lt; x &lt; 1, y(0) =1, y'(1) = 0 ? $</span>",
+        "variants": [{
+          "title": "$ u(x) = -2x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t,\\;0 \\le t \\le x\\\\2x,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = 4x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t,\\;0 \\le t \\le x\\\\2x),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = x + 4 + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}t^2,\\;0 \\le t \\le x\\\\ x^2,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t,\\;0 \\le t \\le x\\\\2x,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = x - 4 + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}4t,\\;0 \\le t \\le x\\\\4x,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = (\\frac{2\\pi}{3} - ln(2 + \\sqrt{3}))x + \\sec x\\tan x - \\int_{0}^{\\pi/3} xt u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = \\sin x \\cos x $ "
+        }, {
+          "title": "$ u(x) = x\\sec x \\tan x $ "
+        }, {
+          "title": "$ u(x) =  \\sec x \\tan x $ "
+        }, {
+          "title": "$ u(x) = \\tan x $ "
+        }, {
+          "title": "$ u(x) = \\sec x $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 11x + 10x^2 + x^3 −  \\int_{0}^{1} (30xt^2 + 20x^2t)u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 3x^2 + 2x^3 $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = x^3 $ "
+        }, {
+          "title": "$ u(x) = x^2 + x^3 $ "
+        }, {
+          "title": "$ u(x) = x^2 - x^3 $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">$ F(x) = \\int_{0}^{x} \\cosh(x^3+ t^3) dt \\Rightarrow F'(x) = ? $</span>",
+        "variants": [{
+          "title": "$ \\cos(2x^3) + \\int_{0}^{x} 3x^2\\sin (x^3 + t^3) dt $ "
+        }, {
+          "title": "$ \\cosh(2x^3) + \\int_{0}^{x} 3x^2\\sinh (x^3 + t^3) dt $ "
+        }, {
+          "title": "$ \\sinh(2x^3) + \\int_{0}^{x} 3x^2\\sinh (x^3 + t^3) dt $ "
+        }, {
+          "title": "$ \\cosh(2x) + \\int_{0}^{x} 3x\\sinh (x + t) dt $ "
+        }, {
+          "title": "$ \\cosh(2x^3) + \\int_{0}^{x} 3x^2\\cosh (x^3 + t^3) dt $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "Which is the equivalent  <br><span class=\"highlighted\">integral(integro-differential) equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ (1 + x^3)y' + 3x^2 y = 1,\\ y(0) = 0 $</span>",
+        "variants": [{
+          "title": "$ u(x) = - \\frac{3x^2}{1 + x^3} \\int_{0}^{x} u(t)dt $ "
+        }, {
+          "title": "$ u(x) = \\frac{1}{1 + x^3} - \\frac{3x^2}{1 + x^3} \\int_{0}^{x} u(t)dt $ "
+        }, {
+          "title": "$ u(x) = \\frac{1}{1 + x^3} + \\int_{0}^{x} u(t)dt $ "
+        }, {
+          "title": "$ u(x) = \\frac{1}{1 + x^3} + \\frac{3x^2}{1 + x^3} \\int_{0}^{x} u(t)dt $ "
+        }, {
+          "title": "$ u(x) = \\frac{3x^2}{1 + x^3} - \\frac{x^2}{1 + x^3} \\int_{0}^{x} u(t)dt $ "
+        }],
+        "answer": 1
+      },
+      {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 5x + \\int_{-1}^{1} (1 - xt ) u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = -6x $ "
+        }, {
+          "title": "$ u(x) = 2x $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = -2x $ "
+        }, {
+          "title": "$ u(x) = 3x $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the equivalent <span class=\"highlighted\">IVP </span>to the <span class=\"highlighted\">Integral equation</span><br><span class=\"highlighted\">$ u(x) = x - \\cos x + \\int_{0}^{x} (x - t) u(t) dt \\ ? $</span>",
+        "variants": [{
+          "title": "$ u''(x) - u(x) = \\cos x, u(0) = - 1, \\ u′(0) = 1 $ "
+        }, {
+          "title": "$ u''(x) - u'(x) = 0; \\ u(0) =1,u'(0) = 1 $ "
+        }, {
+          "title": "$ u''(x) - u(x) = \\sin x, u(0) = - 1, \\ u′(0) = 1 $ "
+        }, {
+          "title": "$ u''(x) + u(x) = \\cos x, u(0) = - 1, \\ u′(0) = 1 $ "
+        }, {
+          "title": "$ u''(x) - u'(x) = \\cos x, u(0) = 0, \\ u′(0) = 0 $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> is the equivalent <span class=\"highlighted\">Integral Equation</span> for the <span class=\"highlighted\">BVP</span><br><span class=\"highlighted\">$ y'' + 9y = \\cos x, 0&lt; x &lt; 1, y(0) = y(1) = 0 ? $</span>",
+        "variants": [{
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}9t(1 + x),\\;0 \\le t \\le x\\\\9x(1 + t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = cos x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}t(1 - x),\\;0 \\le t \\le x\\\\x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t(1 - x),\\;0 \\le t \\le x\\\\2x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = \\cos x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}9t(1 - x),\\;0 \\le t \\le x\\\\9x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}4x(1 - x),\\;0 \\le t \\le x\\\\4t(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 3x + 3x^2 + \\frac{1}{2} \\int_{0}^{1} x^2 t u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 2x + 3x^2 $ "
+        }, {
+          "title": "$ u(x) = 4x + 3x^2 $ "
+        }, {
+          "title": "$ u(x) = 3x - 4x^2 $ "
+        }, {
+          "title": "$ u(x) = 4x^2 $ "
+        }, {
+          "title": "$ u(x) = 3x + 4x^2 $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> of the following is correct  <br><span class=\"highlighted\">classification </span>of the <span class=\"highlighted\">integral equation?</span><br><span class=\"highlighted\">$ u(x) = 1 + \\int_{0}^{x} sin(u(t))dt $</span>",
+        "variants": [{
+          "title": "Volterra, nonlinear, nonhomogeneous "
+        }, {
+          "title": "Fredholm, nonlinear, homogeneous "
+        }, {
+          "title": "Volterra, nonlinear, homogeneous "
+        }, {
+          "title": "Volterra, linear, nonhomogeneous "
+        }, {
+          "title": "Fredholm, linear, homogeneous "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">$ \\frac{d}{dx}\\int_{0}^{x} (x - t)u(t)dt = ? $</span>",
+        "variants": [{
+          "title": "$ \\int_{0}^{x} x u(t)dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x} u(t)dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x} (x - t)u(t)dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x}   tu(t)dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x} (x - t)^2u(t)dt $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<br><span class=\"highlighted\">$ K(x,t) $,</span> in  a  typical <span class=\"highlighted\">integral equation</span>  of the  form <br/><br><span class=\"highlighted\">$ u(x) = f(x) + \\int_{\\alpha (x)}^{\\beta(x)}\\ K(x,t) \\ u(t)\\ dt. $</span><br>is called <span class=\"highlighted\">kernel of the equation</span>.",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">$ u(x) = \\sinh x $  </span>is a solution of the <span class=\"highlighted\">Volterra integral equation</span><br><span class=\"highlighted\">$ u(x) = x + \\int_{0}^{x} (x - t) u(t) dt. $</span><br>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm Integral equation</span><br><span class=\"highlighted\">$ u(x) = \\cos x + 2x + \\int_0^{\\pi} xt \\ u(t) dt $</span><br>(Hint: using Adomian Decomposition Method)",
+        "variants": [{
+          "title": "$ u(x) = x + e^x $   "
+        }, {
+          "title": "$ u(x) = e^{-x} $ "
+        }, {
+          "title": "$ u(x) = e^x + 1 $ "
+        }, {
+          "title": "$ u(x) = \\sin x $ "
+        }, {
+          "title": "$ u(x) = \\cos x $   "
+        }],
+        "answer": 4
+      }, {
+        "question": "Which is the equivalent  <br><span class=\"highlighted\">integral(integro-differential) equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ y'(x) + y(x) = e^{-x}, y(0) = 1 $</span>",
+        "variants": [{
+          "title": "$ u(x) = -1 + e^{-x} -  \\int_{0}^{x} u(t)dt $ "
+        }, {
+          "title": "$ u(x) = \\int_{0}^{x} 4u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 4 - \\int_{0}^{x} u^2(t)dt $ "
+        }, {
+          "title": "$ u(x) = \\int_{0}^{x} u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 1 + \\int_{0}^{1} 4u(t)dt $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = −8 + 11x − x^2 + x^3 −  \\int_{0}^{1} (12x − 20t)u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 1 + x^2 + x^3 $ "
+        }, {
+          "title": "$ u(x) = 1 - x^2 + x^3 $ "
+        }, {
+          "title": "$ u(x) = 4 + 3x + x^2 $ "
+        }, {
+          "title": "$ u(x) = 3 - 3x^2 + 2x^3 $ "
+        }, {
+          "title": "$ u(x) = 3 + 2x + 2x^3 $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<br>A <span class=\"highlighted\">typical form</span> of an<span class=\"highlighted\"> integral equation</span> in u(x) is of the  form <br/><br><span class=\"highlighted\">$ u(x) = f(x) + \\int_{\\alpha (x)}^{\\beta(x)}\\ u(t)\\ dt. $</span>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the  <br>Fredholm Integral equation<br><span class=\"highlighted\">$ u(x) =   e^{x+1} + e^{x−1} + (e^2 + 1)e^{x−1} −  \\int_{0}^{1} e^{x - t} u(t) dt ? $</span><br><span class=\"highlighted\">(Hint: using the Modified Decomposition Method   )</span>",
+        "variants": [{
+          "title": "$ u(x) = x $ "
+        }, {
+          "title": "$ u(x) = e^{x + 1} + e^{x - 1} $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = e^{x + 1} - e^{x - 1} $ "
+        }, {
+          "title": "$ u(x) = xe^{-x} $ "
+        }],
+        "answer": 1
+      },
+      {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the  <br>Fredholm Integral equation<br><span class=\"highlighted\">$ u(x) =   −6 + 14x^4 + 21x^2 + x −  \\int_{-1}^{1} (x^4 - t^4) u(t) dt ? $</span><br><span class=\"highlighted\">(Hint: using the Modified Decomposition Method   )</span>",
+        "variants": [{
+          "title": "$ u(x) = x + 2x^2 $ "
+        }, {
+          "title": "$ u(x) = \\sin x - x $ "
+        }, {
+          "title": "$ u(x) = x - 21x^2 $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = x + 21x^2 $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "<span class=\"highlighted\">$ \\frac{d}{dx}\\int_{x}^{x^2} (x - t)\\cos t u(t)dt = ? $</span>",
+        "variants": [{
+          "title": "$ 2x(x − x^2) \\cos x + \\sin x $ "
+        }, {
+          "title": "$ 2x(x − x^2) cos x^2 + sin x^2 − sin x $ "
+        }, {
+          "title": "$ \\cos x^2 + \\sin x^2 − \\sin x $ "
+        }, {
+          "title": "$ 2x(x − x^2) \\sin x^2 + \\cos x^2 − \\cos x $ "
+        }, {
+          "title": "$ 2x(x + x^2) cos x^2 - sin x^2 − sin x $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = - 1 + \\cos x + \\int_{0}^{\\pi/2} u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 6x $ "
+        }, {
+          "title": "$ u(x) = \\sin x $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = \\cos x $ "
+        }, {
+          "title": "$ u(x) = e^x $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "<br>The <span class=\"highlighted\">standard form</span> of a<span class=\"highlighted\">  Volterra linear integral equation of the 2.kind</span>  is of the form <br/><br><span class=\"highlighted\">$ u(x) = f(x) + \\lambda \\int_{a(x)}^{b(x)}\\ K(x,t) \\ u(t)\\ dt $</span>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "Find  <span class=\"highlighted\">$ d=? $</span><br>If  the equivalent integral equation of the IVP  <br>$ u''(x)+10u'(x)+4u(x)=6\\sin x,u(0)=2,u'(0)=3 $  <br>is of the form  <br>$ u(x)=a+bx+c\\sin x-\\int_0^x [d+e(x-t)]u(t)dt $.  ",
+        "variants": [{
+          "title": "10 "
+        }, {
+          "title": "20 "
+        }, {
+          "title": "30 "
+        }, {
+          "title": "-10 "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm Integral equation</span><br><span class=\"highlighted\">$ u(x) = \\sin x - x + \\int_0^{\\frac{\\pi}{2}} xt \\ u(t) dt $</span><br>(Hint: using Adomian Decomposition Method)",
+        "variants": [{
+          "title": "$ u(x) = e^x + 1 $ "
+        }, {
+          "title": "$ u(x) = \\sin x $ "
+        }, {
+          "title": "$ u(x) = x + e^x $   "
+        }, {
+          "title": "$ u(x) = e^{-x} $ "
+        }, {
+          "title": "$ u(x) = \\cos x $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = −15 + 10x^3 + x^4 − \\int_{0}^{1} (20x^3 − 56t^3)u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 2x^3 + 3x^4 $ "
+        }, {
+          "title": "$ u(x) = x^2 + x^3 $ "
+        }, {
+          "title": "$ u(x) = x + x^2 $ "
+        }, {
+          "title": "$ u(x) = x^3 - x^4 $ "
+        }, {
+          "title": "$ u(x) = x^3 + x^4 $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "<span class=\"highlighted\">$ u(x) = \\cos x $  </span>is a solution of the <span class=\"highlighted\">Fredholm integro-differential equation</span><br><span class=\"highlighted\">$ u'''(x) = 1 + \\sin x - \\int_{0}^{\\pi/2} (x - t) u(t) dt, \\ u(0) =1,u'(0) =0,u''(0) =-1. $</span><br>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> of the following is correct  <br><span class=\"highlighted\">classification </span>of the <span class=\"highlighted\">integral equation?</span><br><span class=\"highlighted\">$ u(x) = x + \\int_{0}^{1} (x - t)^2 u(t) dt $</span>",
+        "variants": [{
+          "title": "Nonhomogeneous linear Fredholm integral equation "
+        }, {
+          "title": "Linear Fredholm integro-differential equation "
+        }, {
+          "title": "Nonlinear Volterra integro-differential equation "
+        }, {
+          "title": "Nonhomogeneous nonlinear Volterra integral equation "
+        }, {
+          "title": "Nonhomogeneous nonlinear Volterra integral equation "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the equivalent <span class=\"highlighted\">IVP </span>to the <span class=\"highlighted\">Integral equation</span><br><span class=\"highlighted\">$ u(x) = 1 + x + \\frac{5}{2}x^2 + \\int_{0}^{x}[ 3 + 6(x - t) - \\frac{5}{2}(x- t)^2] u(t) dt \\ ? $</span>",
+        "variants": [{
+          "title": "$ u'''(x) − 3u''(x) − 6u'(x) + 5u(x) = 0,u(0) = 1, u′(0) = 4, u''(0) = 23 $ "
+        }, {
+          "title": "$ u'''(x) − 3u''(x) − 6u'(x) + 5u(x) = 10,u(0) = 1, u′(0) = 1, u''(0) = 2 $ "
+        }, {
+          "title": "$ u'''(x) + 3u''(x) + 6u'(x) + 5u(x) = 0,u(0) = -1, u′(0) = -4, u''(0) = 23 $ "
+        }, {
+          "title": "$ u′(x) + u(x) = 0, u(0) = 1 $ "
+        }, {
+          "title": "$ u'''(x) − u''(x) − u'(x) + u(x) = 0,u(0) = 1, u′(0) = 4, u''(0) = 23 $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<br><span class=\"highlighted\">$ K(x,t) $,</span> in  a  typical <span class=\"highlighted\">integral equation</span>  of the  form <br/><br><span class=\"highlighted\">$ u(x) = f(x) + \\int_{\\alpha (x)}^{\\beta(x)}\\ K(x,t) \\ u(t)\\ dt. $</span><br>is called <span class=\"highlighted\">unknown function</span>.",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = -1 + ln(1 + x) + \\int_{0}^{e - 1} u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = ln(1 + x) $ "
+        }, {
+          "title": "$ u(x) = 3ln(1 + x) $ "
+        }, {
+          "title": "$ u(x) = ln(1 - x) $ "
+        }, {
+          "title": "$ u(x) = ln( x) $ "
+        }, {
+          "title": "$ u(x) = e^x + 1 $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> is the equivalent <span class=\"highlighted\">Integral Equation</span> for the <span class=\"highlighted\">BVP</span><br><span class=\"highlighted\">$ y'' + xy = 0, 0&lt; x &lt; 1, y(0) = y'(1) = 0 ? $</span>",
+        "variants": [{
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t,\\;0 \\le t \\le x\\\\2x),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t,\\;0 \\le t \\le x\\\\2x,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}t^2,\\;0 \\le t \\le x\\\\ x^2,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = -2x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}tx,\\;0 \\le t \\le x\\\\x,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}xt,\\;0 \\le t \\le x\\\\x^2,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }],
+        "answer": 4
+      },
+      {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the  <br>Fredholm Integral equation<br><span class=\"highlighted\">$ u(x) =  (\\pi + 2)x + \\sin x − \\cos x − x  \\int_{0}^{\\pi} t u(t) dt ? $</span><br><span class=\"highlighted\">(Hint: using the Modified Decomposition Method   )</span>",
+        "variants": [{
+          "title": "$ u(x) = \\cos x - \\cos x $ "
+        }, {
+          "title": "$ u(x) = e^x $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = \\sin x - x $ "
+        }, {
+          "title": "$ u(x) = \\sin x - \\cos x $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 2 + 5x - 3x^2 + \\int_{-1}^{1} ( 1 - xt) u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 5x - 4x^2 $ "
+        }, {
+          "title": "$ u(x) = 4x + x^2 $ "
+        }, {
+          "title": "$ u(x) = 3x + 3x^2 $ "
+        }, {
+          "title": "$ u(x) = 3x - 3x^2 $ "
+        }, {
+          "title": "$ u(x) = x - x^2 $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">$ F(x) = \\int_{x}^{x^2} ln(1  + xt) dt \\Rightarrow F'(x) = ? $</span>",
+        "variants": [{
+          "title": "$ ln(1 + x^3) - ln(1 + x^2) + \\int_{x}^{x^2} \\frac{t}{1 - xt} dt $ "
+        }, {
+          "title": "$ 2xln(1 + x^3) - ln(1 + x^2) $ "
+        }, {
+          "title": "$ 2xln(1 + x^3) + ln(1 + x^2) + \\int_{x}^{x^2} \\frac{t}{1 - xt} dt $ "
+        }, {
+          "title": "$ 2xln(1 + x^3) - ln(1 + x^2) +  \\int_{x}^{x^2} \\frac{t}{1 + xt} dt $ "
+        }, {
+          "title": "$   \\int_{x}^{x^2} \\frac{t}{1 + xt} dt $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "<br>The <span class=\"highlighted\">standard form</span> of a<span class=\"highlighted\">  Volterra linear integral equation</span>  is of the form <br/><br><span class=\"highlighted\">$  \\psi(x) u(x) = f(x) + \\lambda \\int_{a(x)}^{b(x)}\\ K(x,t) \\ u(t)\\ dt $</span>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> of the following is <span class=\"highlighted\">NOT</span> a <span class=\"highlighted\">class </span>of <span class=\"highlighted\">integral equations</span>?",
+        "variants": [{
+          "title": "Fredholm  Integral Equations "
+        }, {
+          "title": "Singular Integral Equations "
+        }, {
+          "title": "Volterra Integral Equations "
+        }, {
+          "title": "Bernoulli Integral Equations "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">$ u(x) = x^3 $  </span>is a solution of the <span class=\"highlighted\">Fredholm integral equation</span><br><span class=\"highlighted\">$ u'(x) = \\frac{2}{3} + \\int_{0}^{1} t u(t) dt. $</span><br>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> is the equivalent <span class=\"highlighted\">Integral Equation</span> for the <span class=\"highlighted\">BVP</span><br><span class=\"highlighted\">$ y'' + y = 0, 0&lt; x &lt; 1, y(0) = y'(1) = 0 ? $</span>",
+        "variants": [{
+          "title": "$ u(x) = \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}t,\\;0 \\le t \\le x\\\\x,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t(1 - x),\\;0 \\le t \\le x\\\\2x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}t,\\;0 \\le t \\le x\\\\x,\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = -2x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}tx(1 - x),\\;0 \\le t \\le x\\\\x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}4x(1 - x),\\;0 \\le t \\le x\\\\4t(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm Integral equation</span><br><span class=\"highlighted\">$ u(x) = 2 + \\cos x + \\int_0^{\\pi} t u(t) dt $</span><br>(Hint: using Adomian Decomposition Method)",
+        "variants": [{
+          "title": "$ u(x) = \\cos x $ "
+        }, {
+          "title": "$ u(x) = x + e^x $   "
+        }, {
+          "title": "$ u(x) = e^{-x} $ "
+        }, {
+          "title": "$ u(x) = \\sin x $   "
+        }, {
+          "title": "$ u(x) = e^x $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "Which is the equivalent  <br><span class=\"highlighted\">integral(integro-differential) equation</span> for the <span class=\"highlighted\">IVP</span><br><span class=\"highlighted\">$ u''  - 5u' + 6u = 6x + 7, \\ u(0) = 1, \\ u'(0) = 1 $</span>",
+        "variants": [{
+          "title": "$ u(x) = 1 - 4x + \\frac{7}{2}x^2 + x^3 +  \\int_{0}^{x} [ 5 - 6(x - t)]u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 1 + 4x - \\frac{7}{2}x^2 + x^3 + \\int_{0}^{x} [ 5 + 6(x - t)]u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 4 - x + \\frac{2}{7}x^2 + x^3 + \\int_{0}^{x} [ 5 - 6(x - t)]u(t)dt $ "
+        }, {
+          "title": "$ u(x) = - 4x + x^2 + 4x^3 + \\int_{0}^{x} [ 6 - 5(x - t)]u(t)dt $ "
+        }, {
+          "title": "$ u(x) = 1 - 4x + x^2 + x^3 + \\int_{0}^{x} [ 6 - 5(x - t)]u(t)dt $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<br>The <span class=\"highlighted\">standard form</span> of a<span class=\"highlighted\">  Volterra linear integral equation of the 1.kind</span>  is of the form <br/><br><span class=\"highlighted\">$ u(x) =\\lambda \\int_{a(x)}^{b(x)}\\ K(x,t) \\ u(t)\\ dt $</span>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = x^2 − x^3 +  \\int_{0}^{1} (1 + xt ) u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = -\\frac{29}{60} - \\frac{1}{6}x + x^2 - x^3 $ "
+        }, {
+          "title": "$ u(x) = -\\frac{9}{20} - \\frac{1}{3}x + x^2 - x^3 $ "
+        }, {
+          "title": "$ u(x) = \\frac{29}{60} + \\frac{1}{6}x + x^2 + x^3 $ "
+        }, {
+          "title": "$ u(x) = x^2 - x^3 $ "
+        }, {
+          "title": "$ u(x) = 6x + \\frac{25}{9}x^2 $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 6x - 2x^2 + \\int_{-1}^{1} (x^2t^3 - x^3t^2) u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 2x $ "
+        }, {
+          "title": "$ u(x) = -6x $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = -2x $ "
+        }, {
+          "title": "$ u(x) = 5x $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the equivalent <span class=\"highlighted\">IVP </span>to the <span class=\"highlighted\">Integral equation</span><br><span class=\"highlighted\">$ u(x) = x^3 + \\int_{0}^{x}(x - t)^2 u(t) dt \\ ? $</span>",
+        "variants": [{
+          "title": "$ u'(x) - u(x) = 0; \\ u(0) = 0 $ "
+        }, {
+          "title": "$ u'''(x) - 2u(x) = 0; \\ u(0) = u'(0) = u''(0) = 0 $ "
+        }, {
+          "title": "$ u'''(x) + 2u(x) = 6; \\ u(0) = u'(0) = u''(0) = 0 $ "
+        }, {
+          "title": "$ u'''(x) - 2u(x) = 6; \\ u(0) = u'(0) = u''(0) = 0 $ "
+        }, {
+          "title": "$ u''(x) - u'(x) = 0; \\ u(0) =1,u'(0) = 1 $ "
+        }],
+        "answer": 3
+      },
+      {
+        "question": "<span class=\"highlighted\">Which </span>is the <span class=\"highlighted\">solution </span>of the  <br><span class=\"highlighted\">Fredholm Integral equation</span><br><span class=\"highlighted\">$ u(x) = xe^x - \\frac{1}{2} + \\frac{1}{2} \\int_0^{1} u(t) dt $</span><br>(Hint: using Adomian Decomposition Method)",
+        "variants": [{
+          "title": "$ u(x) = 3xe^x $ "
+        }, {
+          "title": "$ u(x) = \\sin x $   "
+        }, {
+          "title": "$ u(x) = e^{-x} $ "
+        }, {
+          "title": "$ u(x) = x + e^x $ "
+        }, {
+          "title": "$ u(x) = xe^x $ "
+        }],
+        "answer": 4
+      }, {
+        "question": "<br>The <span class=\"highlighted\">standard form</span> of a<span class=\"highlighted\">  Fredholm linear integral equation</span>  <span class=\"highlighted\">of 2.kind</span> is of the form <br/><br><span class=\"highlighted\">$ f(x) =  \\lambda \\int_{a}^{b}\\ K(x,t) \\ u(t)\\ dt, \\ \\ a \\leq x,t \\leq b $</span>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the equivalent <span class=\"highlighted\">IVP </span>to the <span class=\"highlighted\">Integral equation</span><br><span class=\"highlighted\">$ u(x) = x + \\int_{0}^{x} (x - t) u(t) dt \\ ? $</span>",
+        "variants": [{
+          "title": "$ u''(x) - u'(x) = 0; \\ u(0) =1,u'(0) = 1 $ "
+        }, {
+          "title": "$ u''(x) + u(x) = 0, u(0) = u′(0) = 1 $ "
+        }, {
+          "title": "$ u'''(x) = 2u'(x) + u(x), u(0) = u′(0) = 1, u''(0) =0 $ "
+        }, {
+          "title": "$ u''(x) - u(x) = 0, u(0) = u′(0) = 1 $ "
+        }, {
+          "title": "$ u''(x) = 2u(x), u(0) = u′(0) = 1, u'(0) =0 $ "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">u(x)=32$ u(x) = \\frac{3}{2} $  </span>is a solution of the <span class=\"highlighted\">Volterra integral equation</span><br><span class=\"highlighted\">∫x0(x−t)12u(t)dt=x32$ \\int_{0}^{x} (x - t)^{\\frac{1}{2}} u(t) dt = x^{\\frac{3}{2}} $</span><br>",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) =  \\sec^2 x − 1 + \\int_{0}^{\\pi/4} u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = \\cos^2 x $ "
+        }, {
+          "title": "$ u(x) = -2 + \\cos x $ "
+        }, {
+          "title": "$ u(x) = \\sec^2 x $ "
+        }, {
+          "title": "$ u(x) = -2 + \\sin x $ "
+        }, {
+          "title": "$ u(x) = \\sin^2 x   $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = 1 + 9x + 2x^2 + x^3 −  \\int_{0}^{1} (20xt + 10x^2t^2)u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = 3 - 3x^2 + 2x^3 $ "
+        }, {
+          "title": "$ u(x) = 1 - x^2 + x^3 $ "
+        }, {
+          "title": "$ u(x) = 1 + x^2 + x^3 $ "
+        }, {
+          "title": "$ u(x) = 4 + 3x + x^2 $ "
+        }, {
+          "title": "$ u(x) = 3 + 2x + 2x^3 $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "Find  <span class=\"highlighted\">$ d=? $</span><br>If  the equivalent integral equation of the IVP  <br>$ u''(x)-6u'(x)-4u(x)=-7x^2-2x-4,u(0)=1,u'(0)=2 $  <br>is of the form  <br>$ u(x)=a+bx+cx^2+dx^3+ex^4+\\int_0^x [f+g(x-t)]u(t)dt $.  ",
+        "variants": [{
+          "title": "1.00 "
+        }, {
+          "title": "-0.67 "
+        }, {
+          "title": "-6.00 "
+        }, {
+          "title": "-0.33 "
+        }],
+        "answer": 3
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> is the equivalent <span class=\"highlighted\">Integral Equation</span> for the <span class=\"highlighted\">BVP</span><br><span class=\"highlighted\">$ y'' + 2xy = 1, 0&lt; x &lt; 1, y(0) = 0,y(1) = 0 ? $</span>",
+        "variants": [{
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2t(1 - x),\\;0 \\le t \\le x\\\\2x(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = 1 + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2xt(1 - x),\\;0 \\le t \\le x\\\\2x^2(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = 1 + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}2xt(1 + x),\\;0 \\le t \\le x\\\\2x^2(1 + t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = sin x + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}4x(1 - x),\\;0 \\le t \\le x\\\\4t(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }, {
+          "title": "$ u(x) = 1 + \\int_0^1 K(x, t)u(t)dt $, where $ K(x,t) = \\left\\{ \\begin{array}{l}xt(1 - x),\\;0 \\le t \\le x\\\\x^2(1 - t),\\;x \\le t \\le 1\\end{array} \\right. $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the equation<br><span class=\"highlighted\">$ u(x) = \\frac{\\pi}{2}x + \\sin x - \\cos x + \\int_{0}^{\\pi} x\\cos t u(t)dt $</span><br><b>(Hint: using direct computation method)</b>",
+        "variants": [{
+          "title": "$ u(x) = \\sin x \\cos x $ "
+        }, {
+          "title": "$ u(x) =  \\sin x -  \\cos x $ "
+        }, {
+          "title": "$ u(x) = x\\sec x \\tan x $ "
+        }, {
+          "title": "$ u(x) = \\sin x + \\cos x $ "
+        }, {
+          "title": "$ u(x) = \\tan x $ "
+        }],
+        "answer": 1
+      }, {
+        "question": "<span class=\"highlighted\">$ \\frac{d}{dx}\\int_{0}^{x} (x - t)^2u(t)dt = ? $</span>",
+        "variants": [{
+          "title": "$ \\int_{0}^{x} 2(x - t)u(t)dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x} (x - t)^2u(t)dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x} x u(t)dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x}   tu(t)dt $ "
+        }, {
+          "title": "$ \\int_{0}^{x} (x - t)u(t)dt $ "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which </span>is the solution of the  <br>Fredholm Integral equation<br><span class=\"highlighted\">$ u(x) =   e^{x}(e^{1/3} - 1) + e^{2x} - \\frac{1}{3} \\int_{0}^{1} e^{x - \\frac{5}{3}t} u(t) dt ? $</span><br>(Hint: using Modified Decomposition Method)",
+        "variants": [{
+          "title": "$ u(x) = x^3 $ "
+        }, {
+          "title": "$ u(x) = e^{x} $ "
+        }, {
+          "title": "$ u(x) = e^{2x} $ "
+        }, {
+          "title": "$ u(x) = x^2 $ "
+        }, {
+          "title": "$ u(x) = e^{-2x} $ "
+        }],
+        "answer": 2
+      }, {
+        "question": "<br>An <span class=\"highlighted\">integral equation</span> can be converted to an  equivalent <span class=\"highlighted\">differential equation</span> and wise verse.    ",
+        "variants": [{
+          "title": "True "
+        }, {
+          "title": "False "
+        }],
+        "answer": 0
+      }, {
+        "question": "<span class=\"highlighted\">Which</span> of the following is a <span class=\"highlighted\">class </span>of <span class=\"highlighted\">integral equations</span>?",
+        "variants": [{
+          "title": "Bernoulli Integral Equations "
+        }, {
+          "title": "Partial Integral Equations "
+        }, {
+          "title": "Ordinary Integral Equations "
+        }, {
+          "title": "Homogeneous Integral Equations "
+        }],
+        "answer": 3
+      }
+    ]
+}

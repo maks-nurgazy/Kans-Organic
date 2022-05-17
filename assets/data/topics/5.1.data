@@ -1,0 +1,76 @@
+<p>
+In general, a nonlinear integral equation is defined by
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u(x)=f(x)+\lambda \int_{0}^{x} K(x, t) F(u(t)) d t \)
+</span>
+</td>
+<td>
+(5.1)
+</td>
+</table>
+</p>
+
+<p>
+and
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u(x)=f(x)+\lambda \int_{a}^{b} K(x, t) F(u(t)) d t \)
+</span>
+</td>
+<td>
+(5.2)
+</td>
+</table>
+</p>
+
+<p>
+Equations (5.1) and (5.2) are called nonlinear Volterra integral equation and nonlinear Fredholm integral equation, respectively. The function \(F(u(x))\) is
+nonlinear except \(F=a\) constant or \(F(u(x))=u(x)\) in which case \(F\) is linear. If \( F(u(x))=u^{n}(x)\) for \( n \geq 2 \), then \(F\) is nonlinear. To classify this point, we write a few examples
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u(x)=x+\lambda \int_{0}^{x}(x-t) u^{2}(t) d t \)
+</span>
+</td>
+<td>
+(5.3)
+</td>
+</table>
+</p>
+
+<p>
+nonlinear Volterra integral equation of 2<sup>nd</sup> kind.
+</p>
+
+<p>
+<table class="formula">
+<td>
+<span class="l-example">
+\( u(x)=x+\lambda \int_{0}^{1} \cos x u^{3}(t) d t \)
+</span>
+</td>
+<td>
+(5.4)
+</td>
+</table>
+</p>
+
+<p>
+nonlinear Fredholm integral equation of 2<sup>nd</sup> kind.
+</p>
+
+<p>
+In general, the solution of a nonlinear integral equation is not unique. However the existence of unique solution of, nonlinear equations with specific conditions is possible.
+</p>
