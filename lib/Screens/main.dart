@@ -262,18 +262,25 @@ class _MainScreenState extends State<MainScreen> {
         ? Container(
             width: double.infinity,
             decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    colors: [Color(0xff00466c), Color(0xff71a5c2)],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter)),
+              gradient: LinearGradient(
+                colors: [
+                  Color(0xff00466c),
+                  Color(0xff71a5c2),
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
             child: Align(
               alignment: Alignment.center,
               child: Container(
-                  width: 350,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/cover.png"),
-                          fit: BoxFit.contain))),
+                width: 350,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("assets/images/cover.png"),
+                      fit: BoxFit.contain),
+                ),
+              ),
             ),
           )
         : Scaffold(

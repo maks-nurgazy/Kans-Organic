@@ -31,3 +31,12 @@ dependencies:
   flutter_staggered_grid_view : ^0.4.0
   url_launcher: ^6.0.4
   flutter_youtube_view: ^2.0.3
+
+flutter:
+    assets:
+      - assets/images/
+      - assets/icons/
+      - assets/data/
+      - assets/jquery/
+      - assets/katex/
+      - assets/matjax/
