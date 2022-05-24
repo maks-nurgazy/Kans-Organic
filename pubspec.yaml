@@ -32,10 +32,12 @@ dependencies:
   url_launcher: ^6.0.4
   flutter_youtube_view: ^2.0.3
   syncfusion_flutter_pdfviewer: 20.1.52-beta
+  advance_pdf_viewer: ^2.0.1
 
 flutter:
     assets:
       - assets/images/
+      - assets/books/
       - assets/icons/
       - assets/data/
       - assets/jquery/

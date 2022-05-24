@@ -15,10 +15,13 @@ class CategoryScreen extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 3, horizontal: 6),
         child: Ink(
             decoration: new BoxDecoration(
-                color: (backgroundColor != null)
-                    ? backgroundColor
-                    : Color.fromRGBO(0, 0, 0, 0.05),
-                borderRadius: new BorderRadius.all(Radius.circular(10.0))),
+              color: (backgroundColor != null)
+                  ? backgroundColor
+                  : Color.fromRGBO(0, 0, 0, 0.05),
+              borderRadius: new BorderRadius.all(
+                Radius.circular(10.0),
+              ),
+            ),
             child: InkWell(
               child: new ListTile(
                   contentPadding:
