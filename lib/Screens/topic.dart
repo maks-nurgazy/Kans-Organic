@@ -6,7 +6,6 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
-import 'package:advance_pdf_viewer/advance_pdf_viewer.dart';
 
 class TopicScreen extends StatefulWidget {
   TopicScreen({Key key, this.data}) : super(key: key);
@@ -90,56 +89,51 @@ class _TopicScreenState extends State<TopicScreen> {
   }
 
   Widget getDataScreen(context) {
-
-
     return SfPdfViewer.asset(
       'assets/books/${this.widget.data['file']}.pdf',
-      // controller: _pdfViewerController,
+      controller: _pdfViewerController,
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DefaultTabController(
-        length: 2,
-        child: Scaffold(
-          appBar: AppBar(
-            leading: IconButton(
-              icon: Icon(
-                Icons.arrow_back,
-                color: Colors.white,
-                size: 30,
-              ),
-              onPressed: () {
-                Navigator.pop(context);
-              },
+      home: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.white,
+              size: 30,
             ),
-            title: Text(this.widget.data['name']),
-            actions: <Widget>[
-              Container(
-                margin: EdgeInsets.only(right: 10),
-                child: IconButton(
-                  icon: Icon(
-                    Icons.star,
-                    color: isStarred ? Colors.yellow : Colors.white,
-                    size: 20,
-                  ),
-                  onPressed: () async {
-                    // await db.updatePostFavorite(
-                    //     PostFavorite(this.widget.data['id'], !isStarred));
-                    // db.isPostFavorite(this.widget.data['id']).then((value) {
-                    //   setState(() {
-                    //     isStarred = value;
-                    //   });
-                    // });
-                  },
-                ),
-              )
-            ],
+            onPressed: () {
+              Navigator.pop(context);
+            },
           ),
-          body: this.getDataScreen(context),
+          title: Text(this.widget.data['name']),
+          actions: <Widget>[
+            Container(
+              margin: EdgeInsets.only(right: 10),
+              child: IconButton(
+                icon: Icon(
+                  Icons.star,
+                  color: isStarred ? Colors.yellow : Colors.white,
+                  size: 20,
+                ),
+                onPressed: () async {
+                  // await db.updatePostFavorite(
+                  //     PostFavorite(this.widget.data['id'], !isStarred));
+                  // db.isPostFavorite(this.widget.data['id']).then((value) {
+                  //   setState(() {
+                  //     isStarred = value;
+                  //   });
+                  // });
+                },
+              ),
+            )
+          ],
         ),
+        body: this.getDataScreen(context),
       ),
     );
   }
